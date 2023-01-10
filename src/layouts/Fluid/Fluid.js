@@ -1,3 +1,4 @@
+/* eslint-disable  no-unused-vars */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import AppBar from '@mui/material/AppBar';
@@ -66,3 +67,4 @@ Fluid.propTypes = {
 };
 
 export default Fluid;
+/* eslint-disable  no-unused-vars */

@@ -1,3 +1,4 @@
+/* eslint-disable  no-unused-vars */
 import React from 'react';
 import { Routes as ReactRoutes, Route } from 'react-router-dom';
 import WithLayout from 'WithLayout';
@@ -78,6 +79,7 @@ const Routes = () => {
             component={HomeView}
             layout={MainLayout}
           />
+          // <div><h1> nueva pag </h1></div>
         ))()}
       />
       <Route
@@ -553,3 +555,4 @@ const Routes = () => {
 };
 
 export default Routes;
+/* eslint-disable  no-unused-vars */

@@ -1,3 +1,4 @@
+/* eslint-disable  no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Box from '@mui/material/Box';
@@ -9,6 +10,10 @@ import IconButton from '@mui/material/IconButton';
 import MenuIcon from '@mui/icons-material/Menu';
 import WebbeeLogo from 'svg/logos/Webbee';
 import paletteTypes from 'common/paletteTypes';
+import Select, { SelectChangeEvent } from '@mui/material/Select';
+// import InputLabel from '@mui/material/InputLabel';
+// import MenuItem from '@mui/material/MenuItem';
+// import FormControl from '@mui/material/FormControl';
 
 const Topbar = ({
   themeMode,
@@ -45,7 +50,7 @@ const Topbar = ({
         </Box>
       </Box>
       <Box display="flex" alignItems={'center'}>
-        <Box
+        {/* <Box
           display={'flex'}
           padding={1}
           borderRadius={8}
@@ -82,7 +87,7 @@ const Topbar = ({
               )}
             </Box>
           ))}
-        </Box>
+        </Box> */}
         <Box>
           <IconButton
             onClick={() => themeToggler()}
@@ -127,20 +132,62 @@ const Topbar = ({
         <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
           <Box>
             <Link underline="none" component="a" href="/" color="textPrimary">
-              Home lil
+              Home
             </Link>
           </Box>
           <Box marginX={2}>
             <Link
               underline="none"
               component="a"
-              href="/docs-introduction"
+              href="/page-about"
               color="textPrimary"
             >
-              Documentation 2
+              Nosotros
             </Link>
           </Box>
-          <Box>
+          <Box marginX={2}>
+            <Link
+              underline="none"
+              component="a"
+              href="/page-customers"
+              color="textPrimary"
+            >
+              Servicios
+            </Link>
+          </Box>
+          <Box marginX={2}>
+            <Link
+              underline="none"
+              component="a"
+              href="/page-pricing"
+              color="textPrimary"
+            >
+              Tecnología
+            </Link>
+          </Box>
+          <Box marginX={2}>
+            <Link
+              underline="none"
+              component="a"
+              href="/page-contact"
+              color="textPrimary"
+            >
+              Contactanos
+            </Link>
+          </Box>
+          <Box marginX={2}>
+            <Button
+              variant="contained"
+              color="primary"
+              component="a"
+              target="blank"
+              href="https://material-ui.com/store/items/webbee-landing-page/"
+              size="large"
+            >
+              English
+            </Button>
+          </Box>
+          {/* <Box>
             <Button
               variant="contained"
               color="primary"
@@ -151,7 +198,7 @@ const Topbar = ({
             >
               Purchase now
             </Button>
-          </Box>
+          </Box> */}
         </Box>
       </Box>
     </Box>
@@ -167,3 +214,4 @@ Topbar.propTypes = {
 };
 
 export default Topbar;
+/* eslint-disable  no-unused-vars */

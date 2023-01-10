@@ -1,3 +1,4 @@
+/* eslint-disable  no-unused-vars */
 import React, { useState } from 'react';
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
@@ -88,3 +89,4 @@ Fixed.propTypes = {
 };
 
 export default Fixed;
+/* eslint-disable  no-unused-vars */

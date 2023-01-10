@@ -127,7 +127,7 @@ const Topbar = ({
         <Box sx={{ display: { xs: 'none', md: 'flex' } }} alignItems={'center'}>
           <Box>
             <Link underline="none" component="a" href="/" color="textPrimary">
-              Home niko
+              Home
             </Link>
           </Box>
           <Box marginX={2}>
@@ -137,7 +137,7 @@ const Topbar = ({
               href="/docs-introduction"
               color="textPrimary"
             >
-              Documentationsss
+              Documentation
             </Link>
           </Box>
           <Box>
