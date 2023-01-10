@@ -17,7 +17,6 @@
 gatsbyjs/public
 
 # react-scripts production
-**/build
 
 # misc
 .DS_Store
