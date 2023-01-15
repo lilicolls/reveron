@@ -16,7 +16,9 @@ const Home = () => {
         </Container>
       </Box> */}
       <Box bgcolor={theme.palette.alternate.light} position={'relative'}>
-        <Container position="relative" zIndex={2} maxWidth={'98%'} paddingTop={'0 !important'}>
+        <Container position="relative" zIndex={2} maxWidth={'100%'} paddingTop={'0 !important'}
+          paddingLeft={'0 !important'} paddingRight={'0 !important'}
+        >
           <Carusel />
         </Container>
       </Box>

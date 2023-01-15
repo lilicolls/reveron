@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 /* eslint-disable  no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
@@ -15,9 +16,41 @@ import Button from '@mui/material/Button';
 import Grid from '@mui/material/Grid';
 import RocketIllustration from 'svg/illustrations/Rocket';
 import {
-  Steper
+  Steper, Steper2, Steper3, Steper4
 } from '../../components';
 import img from './img/img-1.jpg';
+import imgTeam from './img/team-lead.jpg';
+import imgCall from './img/working-call.jpg';
+
+const stylesSlider = {
+  '.slick-next': {
+    right: '19px',
+    background: 'yellow',
+  },
+};
+
+function SampleNextArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <Box
+      className={className}
+      style={{ ...style, display: 'block', right: '10px' }}
+      onClick={onClick}
+    />
+  );
+}
+
+function SamplePrevArrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <Box
+      className={className}
+      style={{ ...style, display: 'block', left: '10px',zIndex: '2' }}
+      onClick={onClick}
+      zindex={2}
+    />
+  );
+}
 
 const Services = () => {
   const themeMode = 'light';
@@ -59,36 +92,23 @@ const Services = () => {
     slidesToShow: 1,
     slidesToScroll: 1,
     arrows: true,
+    nextArrow: <SampleNextArrow />,
+    prevArrow: <SamplePrevArrow />,
+    autoplay: true,
+    autoplaySpeed: 5000,
+    pauseOnHover: true,
   };
 
   return (
-    <Slider {...sliderOpts} minHeight={{ xs: 'auto', md: 'calc(100vh - 64px)' }} >
-      {/* <div>
-        <h3>1</h3>
-      </div>
-      <div>
-        <h3>2</h3>
-      </div>
-      <div>
-        <h3>3</h3>
-      </div>
-      <div>
-        <h3>4</h3>
-      </div>
-      <div>
-        <h3>5</h3>
-      </div>
-      <div>
-        <h3>6</h3>
-      </div> */}
+    <Slider {...sliderOpts}>
       <Box
         minHeight={{ xs: 'auto', md: 'calc(100vh - 100px)' }}
 
         height={'auto'}
         position={'relative'}
         sx={{
-          backgroundImage:
-            'url("https://assets.maccarianagency.com/backgrounds/img22.jpg")',
+          backgroundImage: `url("${imgCall}")`,
+
           backgroundSize: 'cover',
           backgroundPosition: 'center right',
           backgroundAttachment: 'fixed',
@@ -104,7 +124,7 @@ const Services = () => {
             zIndex: 1,
             backgroundColor: theme.palette.primary.dark,
             backgroundAttachment: 'fixed',
-            opacity: 0.3,
+            opacity: 0.5,
           },
         }}
       >
@@ -120,6 +140,48 @@ const Services = () => {
         >
           <Container>
             <Steper />
+          </Container>
+        </Box>
+      </Box>
+      <Box
+        minHeight={{ xs: 'auto', md: 'calc(100vh - 100px)' }}
+
+        height={'auto'}
+        position={'relative'}
+        sx={{
+          backgroundImage: `url("${imgTeam}")`,
+
+          backgroundSize: 'cover',
+          backgroundPosition: 'center right',
+          backgroundAttachment: 'fixed',
+          '&:after': {
+            position: 'absolute',
+            top: 0,
+            left: 0,
+            right: 0,
+            bottom: 0,
+            height: '100%',
+            width: '100%',
+            content: '" "',
+            zIndex: 1,
+            backgroundColor: theme.palette.primary.dark,
+            backgroundAttachment: 'fixed',
+            opacity: 0.5,
+          },
+        }}
+      >
+        <Box
+          position={{ xs: 'relative', md: 'absolute' }}
+          top={{ xs: 0, md: '50%' }}
+          width={'100%'}
+          height={'auto'}
+          sx={{
+            transform: { md: 'translateY(-50%)' },
+          }}
+          zIndex={2}
+        >
+          <Container>
+            <Steper2 />
           </Container>
         </Box>
       </Box>
@@ -130,7 +192,7 @@ const Services = () => {
         position={'relative'}
         sx={{
           backgroundImage:
-            'url("https://assets.maccarianagency.com/backgrounds/img19.jpg")',
+                        'url("https://assets.maccarianagency.com/backgrounds/img2.jpg")',
           backgroundSize: 'cover',
           backgroundPosition: 'center right',
           backgroundAttachment: 'fixed',
@@ -146,50 +208,7 @@ const Services = () => {
             zIndex: 1,
             backgroundColor: theme.palette.primary.dark,
             backgroundAttachment: 'fixed',
-            opacity: 0.3,
-          },
-        }}
-      >
-        <Box
-          position={{ xs: 'relative', md: 'absolute' }}
-          top={{ xs: 0, md: '50%' }}
-          width={'100%'}
-          height={'auto'}
-          sx={{
-            transform: { md: 'translateY(-50%)' },
-          }}
-          zIndex={2}
-        >
-          <Container>
-            <Steper />
-          </Container>
-        </Box>
-      </Box>
-
-      <Box
-        minHeight={{ xs: 'auto', md: 'calc(100vh - 100px)' }}
-
-        height={'auto'}
-        position={'relative'}
-        sx={{
-          backgroundImage:
-            'url("https://assets.maccarianagency.com/backgrounds/img2.jpg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center right',
-          backgroundAttachment: 'fixed',
-          '&:after': {
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            height: '100%',
-            width: '100%',
-            content: '" "',
-            zIndex: 1,
-            backgroundColor: theme.palette.primary.dark,
-            backgroundAttachment: 'fixed',
-            opacity: 0.3,
+            opacity: 0.5,
           },
         }}
       >
@@ -213,7 +232,7 @@ const Services = () => {
         height={'auto'}
         position={'relative'}
         sx={{
-          backgroundImage: `url(${img})`,
+          backgroundImage: `url("${img}")`,
           backgroundSize: 'cover',
           backgroundPosition: 'center right',
           backgroundAttachment: 'fixed',
@@ -229,11 +248,11 @@ const Services = () => {
             zIndex: 1,
             backgroundColor: theme.palette.primary.dark,
             backgroundAttachment: 'fixed',
-            opacity: 0,
+            opacity: 0.5,
           },
         }}
       >
-        
+                    
         <Box
           position={{ xs: 'relative', md: 'absolute' }}
           top={{ xs: 0, md: '50%' }}
@@ -249,9 +268,12 @@ const Services = () => {
           </Container>
         </Box>
       </Box>
-      <Box
+      {/* <Box
       >
         <Box
+          minHeight={{ xs: 'auto', md: 'calc(100vh - 100px)' }}
+          height={'auto'}
+          position={'relative'}
           sx= {{
             objectFit: 'cover',
             position: 'fixed',
@@ -263,7 +285,6 @@ const Services = () => {
             autoPlay
             loop
             muted
-            poster="https://assets.codepen.io/6093409/river.jpg"
             
           >
             <source
@@ -275,7 +296,7 @@ const Services = () => {
         <h1
         > texto loco</h1>
 
-      </Box>
+      </Box> */}
     </Slider>
   );
 };

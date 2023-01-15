@@ -10,4 +10,7 @@ export { default as Numbers } from './Numbers';
 export { default as Partners } from './Partners';
 export { default as Carusel } from './Services';
 export { default as Steper } from './Steper';
+export { default as Steper2 } from './Steper2';
+export { default as Steper3 } from './Steper3';
+export { default as Steper4 } from './Steper';
 
