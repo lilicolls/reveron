@@ -1,10 +1,12 @@
+/* eslint-disable  no-unused-vars */
 import React from 'react';
 import Box from '@mui/material/Box';
 import Divider from '@mui/material/Divider';
 import Container from 'common/Container';
-import { Gallery, Headline, Numbers, Story, Team } from './components';
+import { Gallery, Headline, Numbers, Story, Team, Process } from './components';
 
-const About = () => {
+// eslint-disable-next-line react/prop-types
+const About = ({ themeMode = 'light' }) => {
   return (
     <Box>
       <Container>
@@ -25,11 +27,15 @@ const About = () => {
           <Divider />
         </Container>
       </Container>
-      <Container paddingTop={'0 !important'}>
-        <Team />
+      <Container>
+        <Process themeMode={themeMode} />
       </Container>
+      {/* <Container paddingTop={'0 !important'}>
+        <Team />
+      </Container> */}
     </Box>
   );
 };
 
 export default About;
+/* eslint-disable  no-unused-vars */

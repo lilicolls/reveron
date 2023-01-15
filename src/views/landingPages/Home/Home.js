@@ -3,22 +3,34 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Container from 'common/Container';
-import { DemoPages, Features, Footer, Hero, Highlights, About } from './components';
+import { DemoPages, Features, Footer, Hero, Highlights,
+  About, Services, Contact, Numbers, Partners, Carusel } from './components';
 
 const Home = () => {
   const theme = useTheme();
   return (
     <Box>
-      <Box bgcolor={theme.palette.alternate.main} position={'relative'}>
+      {/* <Box bgcolor={theme.palette.alternate.main} position={'relative'}>
         <Container position="relative" zIndex={2}>
           <Hero />
+        </Container>
+      </Box> */}
+      <Box bgcolor={theme.palette.alternate.light} position={'relative'}>
+        <Container position="relative" zIndex={2} maxWidth={'98%'} paddingTop={'0 !important'}>
+          <Carusel />
         </Container>
       </Box>
       <Container>
         <About />
       </Container>
       <Container>
-        <Highlights />
+        <Numbers />
+      </Container>
+      <Container>
+        <Services />
+      </Container>
+      <Container>
+        <Partners />
       </Container>
       <Container>
         <Features />
@@ -26,36 +38,11 @@ const Home = () => {
       <Container>
         <Footer />
       </Container>
-      <br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br>
-      
-      <br></br>
-      <h1> respaldo</h1>
-      <br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br>
-      <br></br><br></br><br></br><br></br><br></br>
-      
-      <Box bgcolor={theme.palette.alternate.main} position={'relative'}>
-        <Container position="relative" zIndex={2}>
-          <Hero />
-        </Container>
-      </Box>
-      <Container>
-        <Highlights />
-      </Container>
-      <Container>
-        <Features />
-      </Container>
-      <Box bgcolor={theme.palette.alternate.main}>
+      <Box bgcolor={theme.palette.primary.main}>
         <Container>
-          <h1> test test </h1>
-          <DemoPages />
+          <Contact />
         </Container>
       </Box>
-      <Container>
-        <Footer />
-      </Container>
     </Box>
   );
 };

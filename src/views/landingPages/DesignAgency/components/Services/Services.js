@@ -47,6 +47,7 @@ const Services = ({ themeMode = 'light' }) => {
     slidesToShow,
     slidesToScroll: 1,
     arrows: false,
+    autoplay: true,
   };
 
   return (

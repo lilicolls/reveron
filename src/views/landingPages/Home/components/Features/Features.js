@@ -23,7 +23,7 @@ const Features = () => {
           color={'textSecondary'}
           align={'center'}
         >
-          Features
+          Tecnología
         </Typography>
         <Box
           component={Typography}

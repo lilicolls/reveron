@@ -1,3 +1,4 @@
+/* eslint-disable  no-unused-vars */
 import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import { ThemeProvider } from '@mui/material/styles';
@@ -19,7 +20,7 @@ export const useDarkMode = () => {
 
   const setThemePalette = (type = 'green') => {
     const palette = palettes.indexOf(type) === -1 ? 'green' : type;
-    window.localStorage.setItem('themePalette', palette);
+    window.localStorage.setItem('blue', palette);
     setPalette(palette);
   };
 
@@ -31,7 +32,7 @@ export const useDarkMode = () => {
     const localTheme = window.localStorage.getItem('themeMode');
     localTheme ? setTheme(localTheme) : setMode('light');
     const localPalette = window.localStorage.getItem('themePalette');
-    localPalette ? setPalette(localPalette) : setThemePalette('green');
+    localPalette ? setPalette(localPalette) : setThemePalette('blue');
     setMountedComponent(true);
   }, []);
 
@@ -102,3 +103,5 @@ WithLayout.propTypes = {
   component: PropTypes.elementType.isRequired,
   layout: PropTypes.elementType.isRequired,
 };
+
+/* eslint-disable  no-unused-vars */
