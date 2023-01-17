@@ -1,17 +1,32 @@
 {
   "files": {
     "main.css": "/static/css/main.5f04cf32.css",
-    "main.js": "/static/js/main.3b39b3dd.js",
+    "main.js": "/static/js/main.4205a87a.js",
     "static/js/27.cf1a19d6.chunk.js": "/static/js/27.cf1a19d6.chunk.js",
+    "static/media/video.mp4": "/static/media/video.9bf1c1dd854dcd39776b.mp4",
+    "static/media/working-call.jpg": "/static/media/working-call.6e28a73cf122dd938d74.jpg",
+    "static/media/office.jpg": "/static/media/office.1024d9ab372c519e25aa.jpg",
+    "static/media/graph.jpg": "/static/media/graph.42d2950802425b766f4a.jpg",
+    "static/media/team-lead.jpg": "/static/media/team-lead.98c3165af50f303e7468.jpg",
+    "static/media/coffe.jpg": "/static/media/coffe.f77212dde057c940264a.jpg",
     "static/media/img-1.jpg": "/static/media/img-1.63f3dda3eab35f8fcd02.jpg",
+    "static/media/proactionSolution.svg": "/static/media/proactionSolution.90548db3dcaac425c67521b173b3d792.svg",
+    "static/media/estudioWeisfeld.svg": "/static/media/estudioWeisfeld.534b4b5192dbf4858ec93cb3ba7211a3.svg",
+    "static/media/bbva.svg": "/static/media/bbva.73b345234fb116af02147817c35a4b3e.svg",
+    "static/media/creditia.svg": "/static/media/creditia.faba7c0451c30c9c2ff96e04538bde56.svg",
+    "static/media/movistar.svg": "/static/media/movistar.ffe2845d8314e0dc2c81d00b064d5268.svg",
+    "static/media/gedco.svg": "/static/media/gedco.5cebb206068e15da384473b853b07006.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/gama.svg": "/static/media/gama.4cf2fa41c8dabb61195a648213344cfd.svg",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/gsaBlue.svg": "/static/media/gsaBlue.4a0234e90faaa9ccc95dae4fe73dd9ef.svg",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
-    "index.html": "/index.html"
+    "index.html": "/index.html",
+    "static/media/citi.svg": "/static/media/citi.d4b5903d431219219039bc5cf34ec76f.svg"
   },
   "entrypoints": [
     "static/css/main.5f04cf32.css",
-    "static/js/main.3b39b3dd.js"
+    "static/js/main.4205a87a.js"
   ]
 }

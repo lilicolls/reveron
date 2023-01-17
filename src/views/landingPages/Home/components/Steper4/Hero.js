@@ -14,31 +14,32 @@ const Hero = () => {
     <Box>
       <Typography
         variant="h2"
-        align="left"
+        align="center"
         gutterBottom
         sx={{
           color: theme.palette.common.white,
           fontWeight: 900,
         }}
       >
-        otro texto de steper
-        <br />
-        for designers
+        Gestión y enfoque
       </Typography>
       <Box>
         <Typography
           variant="h6"
           component="p"
+          align="center"
           sx={{
             color: theme.palette.common.white,
             fontWeight: 400,
           }}
         >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+         Mantenemos segmentados nuestro proceso y planificamos de 
           <br />
-          Eu urna, quam adipiscing eu tincidunt tincidunt dictumst.
+          forma estratégica para lograr la confianza de vuestros clientes finales
           <br />
-          Turpis cursus arcu risus amet at. Turpis.
+          y así lograr los objetivos de ventas,
+          <br />
+          comercialización y recuperación de carteras.
         </Typography>
       </Box>
     </Box>
@@ -52,7 +53,7 @@ const Hero = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={8}>
           <Box width={1} height="100%" display="flex" alignItems="center">
             <GridItemHeadlineBlock />
           </Box>

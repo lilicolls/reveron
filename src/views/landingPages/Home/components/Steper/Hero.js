@@ -21,7 +21,7 @@ const Hero = () => {
           fontWeight: 900,
         }}
       >
-        Impulsamos tus soluciones
+        Somos tu mejor aliado
       </Typography>
       <Box>
         <Typography
@@ -33,11 +33,11 @@ const Hero = () => {
             fontWeight: 400,
           }}
         >
-          Nuestra propósito es conocer las necesidades de nuestros clientes y 
+          Sin importar tu sector, nuestro equipo te acompaña durante todo el proceso
           <br />
-          manejar información actualizada que nos permita acelerar los procesos y 
+          de cobranzas, recuperación de carteras  
           <br />
-          concretar una gestión de vuestros clientes de forma efectiva.
+          y servicios enfocados en la excelencia de atencion al cliente.
         </Typography>
       </Box>
     </Box>

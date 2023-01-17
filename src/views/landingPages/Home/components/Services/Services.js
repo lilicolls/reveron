@@ -4,30 +4,21 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
 import { useTheme } from '@mui/material/styles';
-import Card from '@mui/material/Card';
 import Box from '@mui/material/Box';
-import useMediaQuery from '@mui/material/useMediaQuery';
-import CardContent from '@mui/material/CardContent';
-import Typography from '@mui/material/Typography';
-import Avatar from '@mui/material/Avatar';
-import { colors } from '@mui/material';
 import Container from 'common/Container';
 import Button from '@mui/material/Button';
-import Grid from '@mui/material/Grid';
-import RocketIllustration from 'svg/illustrations/Rocket';
+
 import {
   Steper, Steper2, Steper3, Steper4
 } from '../../components';
 import img from './img/img-1.jpg';
 import imgTeam from './img/team-lead.jpg';
 import imgCall from './img/working-call.jpg';
+import office from './img/office.jpg';
+import coffe from './img/coffe.jpg';
+import video from './img/video.mp4';
+import graph from './img/graph.jpg';
 
-const stylesSlider = {
-  '.slick-next': {
-    right: '19px',
-    background: 'yellow',
-  },
-};
 
 function SampleNextArrow(props) {
   const { className, style, onClick } = props;
@@ -53,37 +44,7 @@ function SamplePrevArrow(props) {
 }
 
 const Services = () => {
-  const themeMode = 'light';
   const theme = useTheme();
-  const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-    defaultMatches: true,
-  });
-  // const isXs = useMediaQuery(theme.breakpoints.up('xs'), {
-  //   defaultMatches: true,
-  // });
-  // const isSm = useMediaQuery(theme.breakpoints.up('sm'), {
-  //   defaultMatches: true,
-  // });
-  // const isMd = useMediaQuery(theme.breakpoints.up('md'), {
-  //   defaultMatches: true,
-  // });
-  // const isLg = useMediaQuery(theme.breakpoints.up('lg'), {
-  //   defaultMatches: true,
-  // });
-
-  // let slidesToShow = 1;
-  // if (isXs) {
-  //   slidesToShow = 1;
-  // }
-  // if (isSm) {
-  //   slidesToShow = 2;
-  // }
-  // if (isMd) {
-  //   slidesToShow = 3;
-  // }
-  // if (isLg) {
-  //   slidesToShow = 4;
-  // }
 
   const sliderOpts = {
     dots: true,
@@ -97,207 +58,224 @@ const Services = () => {
     autoplay: true,
     autoplaySpeed: 5000,
     pauseOnHover: true,
+    lazyLoad: true,
   };
 
   return (
-    <Slider {...sliderOpts}>
-      <Box
-        minHeight={{ xs: 'auto', md: 'calc(100vh - 100px)' }}
-
-        height={'auto'}
-        position={'relative'}
-        sx={{
-          backgroundImage: `url("${imgCall}")`,
-
-          backgroundSize: 'cover',
-          backgroundPosition: 'center right',
-          backgroundAttachment: 'fixed',
-          '&:after': {
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            height: '100%',
-            width: '100%',
-            content: '" "',
-            zIndex: 1,
-            backgroundColor: theme.palette.primary.dark,
-            backgroundAttachment: 'fixed',
-            opacity: 0.5,
-          },
-        }}
-      >
+    <Box>
+      <Slider {...sliderOpts}>
         <Box
-          position={{ xs: 'relative', md: 'absolute' }}
-          top={{ xs: 0, md: '50%' }}
-          width={'100%'}
-          height={'auto'}
           sx={{
-            transform: { md: 'translateY(-50%)' },
+            backgroundImage:
+            `url("${coffe}")`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            '&:after': {
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              height: '100%',
+              width: '100%',
+              content: '" "',
+              zIndex: 1,
+              backgroundColor: theme.palette.primary.dark,
+              backgroundAttachment: 'fixed',
+              opacity: 0.7,
+            },
           }}
-          zIndex={2}
-        >
-          <Container>
-            <Steper />
-          </Container>
-        </Box>
-      </Box>
-      <Box
-        minHeight={{ xs: 'auto', md: 'calc(100vh - 100px)' }}
-
-        height={'auto'}
-        position={'relative'}
-        sx={{
-          backgroundImage: `url("${imgTeam}")`,
-
-          backgroundSize: 'cover',
-          backgroundPosition: 'center right',
-          backgroundAttachment: 'fixed',
-          '&:after': {
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            height: '100%',
-            width: '100%',
-            content: '" "',
-            zIndex: 1,
-            backgroundColor: theme.palette.primary.dark,
-            backgroundAttachment: 'fixed',
-            opacity: 0.5,
-          },
-        }}
-      >
-        <Box
-          position={{ xs: 'relative', md: 'absolute' }}
-          top={{ xs: 0, md: '50%' }}
-          width={'100%'}
-          height={'auto'}
-          sx={{
-            transform: { md: 'translateY(-50%)' },
-          }}
-          zIndex={2}
-        >
-          <Container>
-            <Steper2 />
-          </Container>
-        </Box>
-      </Box>
-      <Box
-        minHeight={{ xs: 'auto', md: 'calc(100vh - 100px)' }}
-
-        height={'auto'}
-        position={'relative'}
-        sx={{
-          backgroundImage:
-                        'url("https://assets.maccarianagency.com/backgrounds/img2.jpg")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center right',
-          backgroundAttachment: 'fixed',
-          '&:after': {
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            height: '100%',
-            width: '100%',
-            content: '" "',
-            zIndex: 1,
-            backgroundColor: theme.palette.primary.dark,
-            backgroundAttachment: 'fixed',
-            opacity: 0.5,
-          },
-        }}
-      >
-        <Box
-          position={{ xs: 'relative', md: 'absolute' }}
-          top={{ xs: 0, md: '50%' }}
-          width={'100%'}
-          height={'auto'}
-          sx={{
-            transform: { md: 'translateY(-50%)' },
-          }}
-          zIndex={2}
-        >
-          <Container>
-            <Steper />
-          </Container>
-        </Box>
-      </Box>
-      <Box
-        minHeight={{ xs: 'auto', md: 'calc(100vh - 100px)' }}
-        height={'auto'}
-        position={'relative'}
-        sx={{
-          backgroundImage: `url("${img}")`,
-          backgroundSize: 'cover',
-          backgroundPosition: 'center right',
-          backgroundAttachment: 'fixed',
-          '&:after': {
-            position: 'absolute',
-            top: 0,
-            left: 0,
-            right: 0,
-            bottom: 0,
-            height: '100%',
-            width: '100%',
-            content: '" "',
-            zIndex: 1,
-            backgroundColor: theme.palette.primary.dark,
-            backgroundAttachment: 'fixed',
-            opacity: 0.5,
-          },
-        }}
-      >
-                    
-        <Box
-          position={{ xs: 'relative', md: 'absolute' }}
-          top={{ xs: 0, md: '50%' }}
-          width={'100%'}
-          height={'auto'}
-          sx={{
-            transform: { md: 'translateY(-50%)' },
-          }}
-          zIndex={2}
-        >
-          <Container>
-            <Steper />
-          </Container>
-        </Box>
-      </Box>
-      {/* <Box
-      >
-        <Box
-          minHeight={{ xs: 'auto', md: 'calc(100vh - 100px)' }}
+          minHeight={{ xs: 'calc(100vh - 100px)', md: 'calc(100vh - 100px)' }}
           height={'auto'}
           position={'relative'}
-          sx= {{
-            objectFit: 'cover',
-            position: 'fixed',
-            zIndex: '-2'
-          }}
-          zIndex={-2}
         >
-          <video
-            autoPlay
-            loop
-            muted
-            
+          <Box
+            width={'100%'}
+            height={'auto'}
+            position={{ xs: 'auto', md: 'absolute' }}
+            top={{ xs: 0, md: '50%' }}
+            sx={{
+              transform: { md: 'translateY(-50%)' },
+            }}
+            zIndex={2}
           >
-            <source
-              src="https://statics.globant.com/production/public/2022-11/Meet%20the%20future.mp4"
-              type="video/mp4"
-            />
-          </video>
+            <Steper />
+          </Box>
         </Box>
-        <h1
-        > texto loco</h1>
+        <Box
+          minHeight={{ xs: 'calc(100vh - 100px)', md: 'calc(100vh - 100px)' }}
 
-      </Box> */}
-    </Slider>
+          height={'auto'}
+          position={'relative'}
+          sx={{
+            backgroundImage:
+            `url("${office}")`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            '&:after': {
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              height: '100%',
+              width: '100%',
+              content: '" "',
+              zIndex: 1,
+              backgroundColor: theme.palette.primary.dark,
+              backgroundAttachment: 'fixed',
+              opacity: 0.7,
+            },
+          }}
+        >
+          <Box
+            position={{ xs: 'auto', md: 'absolute' }}
+            top={{ xs: 0, md: '50%' }}
+            width={'100%'}
+            height={'auto'}
+            sx={{
+              transform: { md: 'translateY(-50%)' },
+            }}
+            zIndex={2}
+          >
+            <Container>
+              <Steper2 />
+            </Container>
+          </Box>
+        </Box>
+        <Box
+          minHeight={{ xs: 'calc(100vh - 100px)', md: 'calc(100vh - 100px)' }}
+
+          height={'auto'}
+          position={'relative'}
+          sx={{
+            backgroundImage:
+            `url("${imgCall}")`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            '&:after': {
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              height: '100%',
+              width: '100%',
+              content: '" "',
+              zIndex: 1,
+              backgroundColor: theme.palette.primary.dark,
+              backgroundAttachment: 'fixed',
+              opacity: 0.7,
+            },
+          }}
+        >
+          <Box
+            position={{ xs: 'relative', md: 'absolute' }}
+            top={{ xs: 0, md: '50%' }}
+            width={'100%'}
+            height={'auto'}
+            sx={{
+              transform: { md: 'translateY(-50%)' },
+            }}
+            zIndex={2}
+          >
+            <Container>
+              <Steper3 />
+            </Container>
+          </Box>
+        </Box>
+        <Box
+          minHeight={{ xs: 'calc(100vh - 100px)', md: 'calc(100vh - 100px)' }}
+
+          height={'auto'}
+          position={'relative'}
+          sx={{
+            backgroundImage:
+            `url("${graph}")`,
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            '&:after': {
+              position: 'absolute',
+              top: 0,
+              left: 0,
+              right: 0,
+              bottom: 0,
+              height: '100%',
+              width: '100%',
+              content: '" "',
+              zIndex: 1,
+              backgroundColor: theme.palette.primary.dark,
+              backgroundAttachment: 'fixed',
+              opacity: 0.7,
+            },
+          }}
+        >
+          <Box
+            position={{ xs: 'relative', md: 'absolute' }}
+            top={{ xs: 0, md: '50%' }}
+            width={'100%'}
+            height={'auto'}
+            sx={{
+              transform: { md: 'translateY(-50%)' },
+            }}
+            zIndex={2}
+          >
+            <Container>
+              <Steper4 />
+            </Container>
+          </Box>
+        </Box>
+        {/* <Box
+        >
+          <Box
+            minHeight={{ xs: 'auto', md: 'calc(100vh - 100px)' }}
+            height={'auto'}
+            position={'relative'}
+            sx= {{
+              objectFit: 'cover',
+              position: 'fixed',
+              zIndex: '-2',
+              '&:after': {
+                position: 'absolute',
+                top: 0,
+                left: 0,
+                right: 0,
+                bottom: 0,
+                height: '100%',
+                width: '100%',
+                content: '" "',
+                zIndex: 1,
+                backgroundColor: theme.palette.primary.dark,
+                backgroundAttachment: 'fixed',
+                opacity: 0.7,
+              },
+            }}
+            zIndex={-2}
+            item xs={12} md={8}
+          >
+            <video
+              autoPlay
+              loop
+              muted
+              style= {{ width: '100vw', minHeight: '100%'}}
+            >
+              <source
+                src={video}
+                type="video/mp4"
+              />
+            </video>
+          </Box>
+          <Container>
+            <Steper4 />
+          </Container>
+
+        </Box> */}
+      </Slider> 
+    </Box>
   );
 };
 

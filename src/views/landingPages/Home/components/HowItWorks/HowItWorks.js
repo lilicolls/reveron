@@ -25,7 +25,7 @@ const HowItWorks = () => {
           color={'secondary'}
           align={'center'}
         >
-          Servicios
+          Nuestros servicios
         </Typography>
         <Typography
           variant="h3"
@@ -36,7 +36,7 @@ const HowItWorks = () => {
             fontWeight: 700,
           }}
         >
-          Data transfer is just a few clicks.
+          Tu solución a unos cuantos clicks.
         </Typography>
         <Typography
           variant="h6"
@@ -44,8 +44,7 @@ const HowItWorks = () => {
           color={'textSecondary'}
           data-aos={'fade-up'}
         >
-          If we're no longer the right solution for you, <br />
-          we'll allow you to export and take your data at anytime for any
+          Contamos con múltiples sercivios de gestión y atención de clientes que nos permiten versatilidad y acoplar nuestro staff a sus necesidades.
           reason.
         </Typography>
       </Box>
@@ -54,7 +53,7 @@ const HowItWorks = () => {
           {
             title: 'Cobranzas',
             subtitle:
-              'We meet with your team to know more about your idea, project and goal. After that, our team sits to create an action plan and proposal for your project.',
+              'Nuestra casa matriz en Venezuela soporta operaciones de este tipo a través de todo Latam,  manejamos una extensa gama de servicios de cobranza integral de cobro con distintos plazos de morosidad.',
             icon: (
               <svg
                 width={24}
@@ -76,7 +75,7 @@ const HowItWorks = () => {
           {
             title: 'Telemarketing',
             subtitle:
-              'We start by designing a mockup or prototype of your website/app, and present it to you. Once with the initial mockup, we start the revision process to perfect it.',
+              'En Grupo Reveron  ofrecemos distintas soluciones de Contact Center para comercios, organizaciones y pymes nuestra fuerza de ventas conformada por ejecutivos telefónicos entrenados para ofrecer servicios en los sectores B2B y B2C.',
             icon: (
               <svg
                 width={24}
@@ -98,7 +97,7 @@ const HowItWorks = () => {
           {
             title: 'Atención al cliente',
             subtitle:
-              'We develop your website using the best practices and standards, so you have a perfectly responsive, lightning fast, and super scalable website.',
+              'Nuestro foco es la preparación y correcta inducción de nuestro agentes para brindar un acompañamiento profesional e integral a cada uno de nuestros cliente logrando una completa satisfacción en cada una de sus campañas.',
             icon: (
               <svg
                 width={24}
@@ -120,7 +119,7 @@ const HowItWorks = () => {
           {
             title: 'Fidelización',
             subtitle:
-              'We develop your website using the best practices and standards, so you have a perfectly responsive, lightning fast, and super scalable website.',
+              'A través de nuestro servicio de atención remota mantenemos contacto permanente con sus clientes, asegurando siempre una persona disponible para atender sus consultas, entregar información, solucionar sus requerimientos; esto de forma eficiente y personalizada.',
             icon: (
               <svg
                 width={24}
@@ -142,29 +141,7 @@ const HowItWorks = () => {
           {
             title: 'Portabilidad',
             subtitle:
-              'We develop your website using the best practices and standards, so you have a perfectly responsive, lightning fast, and super scalable website.',
-            icon: (
-              <svg
-                width={24}
-                height={24}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
-                />
-              </svg>
-            ),
-          },
-          {
-            title: 'Gestión de cartera',
-            subtitle:
-              'We develop your website using the best practices and standards, so you have a perfectly responsive, lightning fast, and super scalable website.',
+              'A través de la ejecución de campañas de portabilidad, nuestro equipo de agentes realiza un análisis comparativo que permiten ofreceerle al usuario una propuesta de valor y, así atrar y captar nuevos clientes de su competencia directa, aportando al crecimiento de su organizacíon.',
             icon: (
               <svg
                 width={24}

@@ -21,7 +21,7 @@ const Hero = () => {
           fontWeight: 900,
         }}
       >
-        Gestión y enfoque
+        Nuestra trayectoria nos define
       </Typography>
       <Box>
         <Typography
@@ -33,13 +33,12 @@ const Hero = () => {
             fontWeight: 400,
           }}
         >
-          Mantenemos segmentados nuestros procesos y 
+          Contamos con más de 25 años de experiencia.
           <br />
-          planificamos de forma estratégica para lograr la confianza de vuestros clientes. 
+          Nos mantenemos en constante evolución y adaptamos nuestra operación
           <br />
-         Y así lograrlos objetivos de ventas,
-          <br />
-          comercialización y recuperación de carteras.
+         a sus necesidades para alcanzar todos tus objetivos.
+
         </Typography>
       </Box>
     </Box>
@@ -53,7 +52,7 @@ const Hero = () => {
         justifyContent="center"
         alignItems="center"
       >
-        <Grid item xs={12} md={6}>
+        <Grid item xs={12} md={8}>
           <Box width={1} height="100%" display="flex" alignItems="center">
             <GridItemHeadlineBlock />
           </Box>

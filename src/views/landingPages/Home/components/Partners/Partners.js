@@ -1,7 +1,19 @@
+/* eslint-disable  no-unused-vars */
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';
+import gedcoIcon from './icons/gedco.svg';
+import bbva from './icons/bbva.svg';
+import movistar from './icons/movistar.svg';
+import creditiaSvg from './icons/creditia.svg';
+import proactionSolutionSvg from './icons/proactionSolution.svg';
+import estudioWeisfeld from './icons/estudioWeisfeld.svg';
+import citi from './icons/citi.svg';
+import gama from './icons/gama.svg';
+import gsaBlue from './icons/gsaBlue.svg';
+
+
 
 const Partners = () => {
   const theme = useTheme();
@@ -22,12 +34,15 @@ const Partners = () => {
       </Box>
       <Box display="flex" flexWrap="wrap" justifyContent={'center'}>
         {[
-          'https://assets.maccarianagency.com/svg/logos/airbnb-original.svg',
-          'https://assets.maccarianagency.com/svg/logos/amazon-original.svg',
-          'https://assets.maccarianagency.com/svg/logos/fitbit-original.svg',
-          'https://assets.maccarianagency.com/svg/logos/netflix-original.svg',
-          'https://assets.maccarianagency.com/svg/logos/google-original.svg',
-          'https://assets.maccarianagency.com/svg/logos/paypal-original.svg',
+          gedcoIcon,
+          bbva,
+          citi,
+          proactionSolutionSvg,
+          movistar,
+          gama,
+          gsaBlue,
+          creditiaSvg,
+          estudioWeisfeld,
         ].map((item, i) => (
           <Box maxWidth={90} marginTop={2} marginRight={4} key={i}>
             <Box
@@ -51,3 +66,4 @@ const Partners = () => {
 };
 
 export default Partners;
+/* eslint-disable  no-unused-vars */

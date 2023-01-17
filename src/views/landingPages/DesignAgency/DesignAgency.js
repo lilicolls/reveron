@@ -57,7 +57,7 @@ const DesignAgency = ({ themeMode = 'light' }) => {
       <Container paddingBottom={'0 !important'}>
         <WhyUs />
       </Container>
-      <Box
+      {/* <Box
         component={'svg'}
         preserveAspectRatio="none"
         xmlns="http://www.w3.org/2000/svg"
@@ -72,7 +72,7 @@ const DesignAgency = ({ themeMode = 'light' }) => {
           fill={theme.palette.alternate.main}
           points="0,273 1921,273 1921,0 "
         />
-      </Box>
+      </Box> */}
       <Box bgcolor={theme.palette.alternate.main} position={'relative'}>
         <Container position="relative" zIndex={2}>
           <Process themeMode={themeMode} />

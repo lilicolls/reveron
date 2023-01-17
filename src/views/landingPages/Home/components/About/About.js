@@ -1,3 +1,4 @@
+/* eslint-disable  no-unused-vars */
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Card from '@mui/material/Card';
@@ -11,6 +12,7 @@ import Grid from '@mui/material/Grid';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
+import office from './img/office.jpg';
 
 const About = () => {
   const theme = useTheme();
@@ -21,17 +23,6 @@ const About = () => {
   return (
     <Box>
       <Box marginBottom={{ xs: 4, sm: 8, md: 12 }}>
-        {/* <Typography
-          sx={{
-            textTransform: 'uppercase',
-            fontWeight: 'medium',
-          }}
-          gutterBottom
-          color={'secondary'}
-          align={'center'}
-        >
-          Nosotros
-        </Typography> */}
         <Box
           component={Typography}
           fontWeight={700}
@@ -40,7 +31,7 @@ const About = () => {
           gutterBottom
           data-aos="fade-up"
         >
-          The Biggest Digital Conference
+          Formamos parte de tu equipo
         </Box>
         <Typography
           variant={'h6'}
@@ -49,26 +40,15 @@ const About = () => {
           align={'center'}
           data-aos="fade-up"
         >
-          There arge many variations ohf passages of sorem gpsum ilable,
+          Con una amplia trayectoria desde nuestra conformación en 1990,
           <br />
-          but the majority have suffered alteration in some form, by ected
-          humour, or randomised words whi.rere arge many variations ohf passages
-          of sorem gpsum ilable.
+          no solo hemos acompañado a muchas empresas en la recuperación de carteras y procesos de <br/>
+          cobranzas sino también en distintas campañas de telemarketing y fidelización de clientes.
         </Typography>
       </Box>
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
-        <Grid item xs={12} md={6} data-aos={isMd ? 'fade-right' : 'fade-up'}>
+        <Grid item xs={12} md={7} data-aos={isMd ? 'fade-right' : 'fade-up'}>
           <Box marginBottom={4}>
-            <Typography
-              sx={{
-                textTransform: 'uppercase',
-                fontWeight: 'medium',
-              }}
-              gutterBottom
-              color={'secondary'}
-            >
-              Popular guests
-            </Typography>
             <Box
               component={Typography}
               fontWeight={700}
@@ -76,15 +56,13 @@ const About = () => {
               gutterBottom
             >
               <Typography color="primary" variant="inherit" component="span">
-                Get the brand visibility
+                Nos enfocamos
               </Typography>{' '}
-              by engaging with audience
+              en lo importante
             </Box>
             <Typography variant={'h6'} component={'p'} color={'textSecondary'}>
-              Lorem ipsum dolor sit amet,
-              <br />
-              consectetur adipiscing elit. Id ultricies sed ultricies fringilla
-              commodo.
+              Mantenemos nuestra metodología y valores durante más de 25 años, siempre incorporando a nuestro procesos nuevas y robustas plataformas
+             de tecnología que apalancan nuestro crecimiento.
             </Typography>
           </Box>
           <List disablePadding>
@@ -107,9 +85,9 @@ const About = () => {
                     />
                   </svg>
                 ),
-                title: 'Sign Up',
+                title: 'Clientes ',
                 subtitle:
-                  'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.',
+                  'Garantizamos una mejor experiencia, fortaleciendo la atención al cliente. Haciéndola más personalizada, ágil y diligente, respondiendo a sus necesidades en el menor tiempo posible.',
               },
               {
                 icon: (
@@ -129,9 +107,9 @@ const About = () => {
                     />
                   </svg>
                 ),
-                title: 'Create Events',
+                title: 'Omnicanalidad',
                 subtitle:
-                  'Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+                  'Incorporamos nuevos canales de atención ofreciendo múltiples instancias de interacción con el cliente, lo que significa una estrategia de valor que impliquica una mejora continua en nuestros plazos y alcance de metas crucialmente importantes.',
               },
               {
                 icon: (
@@ -151,9 +129,8 @@ const About = () => {
                     />
                   </svg>
                 ),
-                title: 'Share memories',
-                subtitle:
-                  'Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+                title: 'Calidad',
+                subtitle: 'Brindar un servicio integral de gestión a la medida de cada cliente en forma honesta, respetuosa, eficiente y efectiva. Siempre orientados en el diseño de estrategias que permitan el creicimiento de vuestra organización.',
               },
             ].map((item, index) => (
               <ListItem key={index} disableGutters data-aos="fade-up">
@@ -178,7 +155,7 @@ const About = () => {
           justifyContent="center"
           alignItems="center"
           xs={12}
-          md={6}
+          md={4}
           data-aos={isMd ? 'fade-left' : 'fade-up'}
         >
           <Box component={Card} boxShadow={4} height={'100%'} width={'100%'}>
@@ -187,7 +164,13 @@ const About = () => {
               height={'100%'}
               width={'100%'}
               minHeight={300}
-              image="https://assets.maccarianagency.com/backgrounds/img20.jpg"
+              image={office}
+              sx={{
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+              }}
+              style= {{filter: 'grayscale(100%)'}}
             />
           </Box>
         </Grid>
@@ -197,3 +180,4 @@ const About = () => {
 };
 
 export default About;
+/* eslint-disable  no-unused-vars */

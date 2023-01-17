@@ -33,22 +33,22 @@ const Numbers = () => {
       <Grid container spacing={2} data-aos={'fade-up'}>
         {[
           {
-            title: 20,
+            title: 30,
             subtitle:
-              '20 años de servicios.',
+              '30 años de servicios.',
             suffix: '+',
           },
           {
-            title: 100,
+            title: 50,
             subtitle:
-              '100 + clientes.',
+              '50 + clientes.',
             suffix: '+',
           },
           {
-            title: 99,
+            title: 150,
             subtitle:
-              '99% of our customers rated 5-star our themes over 5 years.',
-            suffix: '%',
+              '150 posiciones en latinoamerica y el resto del mundo.',
+            suffix: '+',
           },
         ].map((item, i) => (
           <Box
