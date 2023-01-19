@@ -1,4 +1,5 @@
 /* eslint-disable react/no-unescaped-entities */
+/* eslint-disable  no-unused-vars */
 import React from 'react';
 import { alpha, useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
@@ -9,6 +10,15 @@ import Grid from '@mui/material/Grid';
 import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
+import IconButton from '@mui/material/IconButton';
+import AddIcon from '@mui/icons-material/Add';
+import AccountBalanceOutlinedIcon from '@mui/icons-material/AccountBalanceOutlined';
+import ContactPhoneOutlinedIcon from '@mui/icons-material/ContactPhoneOutlined';
+import SupportAgentOutlinedIcon from '@mui/icons-material/SupportAgentOutlined';
+import HandshakeOutlinedIcon from '@mui/icons-material/HandshakeOutlined';
+import ConnectWithoutContactOutlinedIcon from '@mui/icons-material/ConnectWithoutContactOutlined';
+import AssuredWorkloadOutlinedIcon from '@mui/icons-material/AssuredWorkloadOutlined';
+import QueryStatsOutlinedIcon from '@mui/icons-material/QueryStatsOutlined';
 
 const HowItWorks = () => {
   const theme = useTheme();
@@ -36,7 +46,7 @@ const HowItWorks = () => {
             fontWeight: 700,
           }}
         >
-          Tu solución a unos cuantos clicks.
+          Tu solución a unos cuantos clicks
         </Typography>
         <Typography
           variant="h6"
@@ -45,7 +55,6 @@ const HowItWorks = () => {
           data-aos={'fade-up'}
         >
           Contamos con múltiples sercivios de gestión y atención de clientes que nos permiten versatilidad y acoplar nuestro staff a sus necesidades.
-          reason.
         </Typography>
       </Box>
       <Grid container spacing={4}>
@@ -53,111 +62,41 @@ const HowItWorks = () => {
           {
             title: 'Cobranzas',
             subtitle:
-              'Nuestra casa matriz en Venezuela soporta operaciones de este tipo a través de todo Latam,  manejamos una extensa gama de servicios de cobranza integral de cobro con distintos plazos de morosidad.',
+              'Desde nuestra casa matriz en Venezuela brindamos un servicio integral de cobranza abarcando el área bancaria y comercial, desarrollando estrategias de cobranza que garanticen la recuperación de carteras morosas, bancarias, servicios, consumos, facuras entre otros.',
             icon: (
-              <svg
-                width={24}
-                height={24}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M20.618 5.984A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016zM12 9v2m0 4h.01"
-                />
-              </svg>
+              <AssuredWorkloadOutlinedIcon/>
             ),
           },
           {
             title: 'Telemarketing',
             subtitle:
-              'En Grupo Reveron  ofrecemos distintas soluciones de Contact Center para comercios, organizaciones y pymes nuestra fuerza de ventas conformada por ejecutivos telefónicos entrenados para ofrecer servicios en los sectores B2B y B2C.',
+              'En Grupo Reveron ofrecemos distintas soluciones de Contact Center para comercios, organizaciones y pymes. Nuestra fuerza de ventas conformada por ejecutivos telefónicos entrenados para ofrecer servicios en los sectores B2B y B2C.',
             icon: (
-              <svg
-                width={24}
-                height={24}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M10 20l4-16m4 4l4 4-4 4M6 16l-4-4 4-4"
-                />
-              </svg>
+              <SupportAgentOutlinedIcon/>
             ),
           },
           {
             title: 'Atención al cliente',
             subtitle:
-              'Nuestro foco es la preparación y correcta inducción de nuestro agentes para brindar un acompañamiento profesional e integral a cada uno de nuestros cliente logrando una completa satisfacción en cada una de sus campañas.',
+              'Nuestro foco es la correcta preparación e inducción de nuestros agentes, para brindar un acompañamiento profesional e integral a cada uno de nuestros cliente logrando una completa satisfacción en cada una de sus campañas.',
             icon: (
-              <svg
-                width={24}
-                height={24}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
-                />
-              </svg>
+              <ConnectWithoutContactOutlinedIcon/>
             ),
           },
           {
             title: 'Fidelización',
             subtitle:
-              'A través de nuestro servicio de atención remota mantenemos contacto permanente con sus clientes, asegurando siempre una persona disponible para atender sus consultas, entregar información, solucionar sus requerimientos; esto de forma eficiente y personalizada.',
+              'Nuestro servicio de atención remota nos permite mantenernos en contacto permanente con sus clientes, asegurando siempre una persona disponible para atender sus consultas, entregar información y solucionar sus requerimientos; esto de forma eficiente y personalizada.',
             icon: (
-              <svg
-                width={24}
-                height={24}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
-                />
-              </svg>
+              <HandshakeOutlinedIcon/>
             ),
           },
           {
             title: 'Portabilidad',
             subtitle:
-              'A través de la ejecución de campañas de portabilidad, nuestro equipo de agentes realiza un análisis comparativo que permiten ofreceerle al usuario una propuesta de valor y, así atrar y captar nuevos clientes de su competencia directa, aportando al crecimiento de su organizacíon.',
+              'A través de la ejecución de campañas de portabilidad, nuestro equipo de agentes realiza un análisis comparativo que permiten ofrecerle al usuario una propuesta de valor y, así atraer y captar nuevos clientes de su competencia directa, aportando al crecimiento de su organización.',
             icon: (
-              <svg
-                width={24}
-                height={24}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M20 7l-8-4-8 4m16 0l-8 4m8-4v10l-8 4m0-10L4 7m8 4v10M4 7v10l8 4"
-                />
-              </svg>
+              <QueryStatsOutlinedIcon/>
             ),
           },
         ].map((item, i) => (
@@ -219,6 +158,9 @@ const HowItWorks = () => {
           >
             Ver más
           </Button>
+          {/* <IconButton aria-label="twitter" size={'large'}>
+            <AddIcon />
+          </IconButton> */}
         </Grid>
       </Grid>
     </Box>

@@ -7,7 +7,7 @@ import Divider from '@mui/material/Divider';
 import AppBar from '@mui/material/AppBar';
 import Box from '@mui/material/Box';
 import Slide from '@mui/material/Slide';
-import { Topbar, Sidebar, Footer } from './components';
+import { Topbar, Sidebar, Footer, OldBar } from './components';
 import Container from 'common/Container';
 import { pages } from '../navigation';
 
@@ -70,6 +70,13 @@ const Main = ({
         variant="temporary"
         pages={pages}
       />
+      {/* <OldBar
+        onClose={handleSidebarClose}
+        open={openSidebar}
+        variant="temporary"
+        pages={pages}
+      /> */}
+
       <main>
         <Box height={{ xs: 56, sm: 64 }} />
         {children}

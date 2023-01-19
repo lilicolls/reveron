@@ -39,6 +39,7 @@ const Services = ({ themeMode = 'light' }) => {
   if (isLg) {
     slidesToShow = 4;
   }
+  console.log('slidesToShow', slidesToShow);
 
   const sliderOpts = {
     dots: true,

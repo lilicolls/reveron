@@ -12,8 +12,8 @@ const Webbee = ({ width = 45, height = 70 }) => {
   return (
     <Box
       component="img"
-      width={width}
-      height={height}
+      height={'100%'}
+      width={'100%'}
       src={logoReveron}
       alt="..."
       sx={{

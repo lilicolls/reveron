@@ -17,6 +17,12 @@ export const light = {
     dark: '#FF9800',
     contrastText: 'rgba(0, 0, 0, 0.87)',
   },
+  tertiary: {
+    main: '#00AB55',
+    light: '#33CC70',
+    dark: '#009357',
+    contrastText: '#fff',
+  },
   text: {
     primary: '#2d3748',
     secondary: '#646e73',
@@ -52,6 +58,12 @@ export const dark = {
     main: '#FFE102',
     dark: '#DBBE01',
     contrastText: 'rgba(0, 0, 0, 0.87)',
+  },
+  tertiary: {
+    main: '#00AB55',
+    light: '#33CC70',
+    dark: '#009357',
+    contrastText: '#fff',
   },
   text: {
     primary: '#EEEEEF',

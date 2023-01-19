@@ -5,10 +5,12 @@ import Box from '@mui/material/Box';
 import Container from 'common/Container';
 import { DemoPages, Features, Footer, Hero, Highlights,
   About, Services, Contact, Numbers, Partners, Carusel, Process, WhyUs } from './components';
+import useMediaQuery from '@mui/material/useMediaQuery';
 
 // eslint-disable-next-line react/prop-types
 const Home = ({ themeMode = 'light' }) => {
   const theme = useTheme();
+
   return (
     <Box>
       <Box bgcolor={theme.palette.alternate.light} position={'relative'}>
@@ -24,7 +26,7 @@ const Home = ({ themeMode = 'light' }) => {
       <Container>
         <Numbers />
       </Container>
-      <Container>
+      <Container bgcolor={theme.palette.alternate.main}>
         <Services />
       </Container>
       <Container>

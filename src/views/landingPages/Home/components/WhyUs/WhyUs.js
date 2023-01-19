@@ -1,8 +1,13 @@
+/* eslint-disable  no-unused-vars */
 import React from 'react';
 import Box from '@mui/material/Box';
+import Card from '@mui/material/Card';
+import CardMedia from '@mui/material/CardMedia';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import TeamWorkingIllustration from 'svg/illustrations/TeamWorking';
+import buisness from './img/business.jpg';
+import computer from './img/computer.jpg';
 
 const WhyUs = () => {
   return (
@@ -54,11 +59,26 @@ const WhyUs = () => {
           </Button>
         </Box>
       </Box>
-      <Box display={'flex'} justifyContent={'center'} alignItems={'center'}>
+      {/*<Box display={'flex'} justifyContent={'center'} alignItems={'center'} mb={2}>
         <Box height={'100%'} width={'100%'} maxWidth={600} data-aos={'fade-up'}>
+          <Box component={Card} boxShadow={4} height={'100%'} width={'100%'}>
+             <Box
+              component={CardMedia}
+              height={'100%'}
+              width={'100%'}
+              minHeight={300}
+              image={computer}
+              sx={{
+                backgroundRepeat: 'no-repeat',
+                backgroundPosition: 'center',
+                backgroundSize: 'cover',
+              }}
+              style= {{filter: 'grayscale(100%)'}}
+            />
+          </Box>
           <TeamWorkingIllustration height={'100%'} width={'100%'} />
         </Box>
-      </Box>
+      </Box> */}
     </Box>
   );
 };

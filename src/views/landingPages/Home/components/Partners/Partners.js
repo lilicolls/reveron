@@ -12,6 +12,7 @@ import estudioWeisfeld from './icons/estudioWeisfeld.svg';
 import citi from './icons/citi.svg';
 import gama from './icons/gama.svg';
 import gsaBlue from './icons/gsaBlue.svg';
+import reveron from './icons/logoReveron.svg';
 
 
 
@@ -43,6 +44,7 @@ const Partners = () => {
           gsaBlue,
           creditiaSvg,
           estudioWeisfeld,
+          // reveron
         ].map((item, i) => (
           <Box maxWidth={90} marginTop={2} marginRight={4} key={i}>
             <Box

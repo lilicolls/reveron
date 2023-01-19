@@ -13,6 +13,10 @@ import ListItem from '@mui/material/ListItem';
 import ListItemText from '@mui/material/ListItemText';
 import ListItemAvatar from '@mui/material/ListItemAvatar';
 import office from './img/office.jpg';
+// import MenuIcon from '@mui/icons-material/Menu';
+import GroupsIcon from '@mui/icons-material/Groups';
+import HubTwoToneIcon from '@mui/icons-material/HubTwoTone';
+import TaskAltOutlinedIcon from '@mui/icons-material/TaskAltOutlined';
 
 const About = () => {
   const theme = useTheme();
@@ -42,12 +46,12 @@ const About = () => {
         >
           Con una amplia trayectoria desde nuestra conformación en 1990,
           <br />
-          no solo hemos acompañado a muchas empresas en la recuperación de carteras y procesos de <br/>
-          cobranzas sino también en distintas campañas de telemarketing y fidelización de clientes.
+          hemos acompañado a muchas empresas en la recuperación de carteras y procesos de <br/>
+          cobranzas así como en distintas campañas de telemarketing y fidelización de clientes.
         </Typography>
       </Box>
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
-        <Grid item xs={12} md={7} data-aos={isMd ? 'fade-right' : 'fade-up'}>
+        <Grid item xs={12} md={6} data-aos={isMd ? 'fade-right' : 'fade-up'}>
           <Box marginBottom={4}>
             <Box
               component={Typography}
@@ -61,76 +65,33 @@ const About = () => {
               en lo importante
             </Box>
             <Typography variant={'h6'} component={'p'} color={'textSecondary'}>
-              Mantenemos nuestra metodología y valores durante más de 25 años, siempre incorporando a nuestro procesos nuevas y robustas plataformas
-             de tecnología que apalancan nuestro crecimiento.
+            Mantenemos nuestra metodología y valores durante más de 30 años, siempre incorporando a nuestros procesos nuevas y robustas plataformas de tecnología que apalancan nuestro crecimiento.
             </Typography>
           </Box>
           <List disablePadding>
             {[
               {
                 icon: (
-                  <svg
-                    width={24}
-                    height={24}
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M11 16l-4-4m0 0l4-4m-4 4h14m-5 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h7a3 3 0 013 3v1"
-                    />
-                  </svg>
+                  <GroupsIcon/>
                 ),
                 title: 'Clientes ',
                 subtitle:
-                  'Garantizamos una mejor experiencia, fortaleciendo la atención al cliente. Haciéndola más personalizada, ágil y diligente, respondiendo a sus necesidades en el menor tiempo posible.',
+                  'Garantizamos una excelente experiencia, fortaleciendo la atención al cliente; haciéndola más personalizada, ágil y diligente, respondiendo a sus necesidades en el menor tiempo posible.',
               },
               {
                 icon: (
-                  <svg
-                    width={24}
-                    height={24}
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                    />
-                  </svg>
+                  <HubTwoToneIcon/>
                 ),
                 title: 'Omnicanalidad',
                 subtitle:
-                  'Incorporamos nuevos canales de atención ofreciendo múltiples instancias de interacción con el cliente, lo que significa una estrategia de valor que impliquica una mejora continua en nuestros plazos y alcance de metas crucialmente importantes.',
+                  'Incorporamos nuevos canales de atención ofreciendo múltiples instancias de interacción con el cliente, lo que significa una estrategia de valor que implica una mejora continua en nuestros plazos y alcance de metas crucialmente importantes.',
               },
               {
                 icon: (
-                  <svg
-                    width={24}
-                    height={24}
-                    xmlns="http://www.w3.org/2000/svg"
-                    fill="none"
-                    viewBox="0 0 24 24"
-                    stroke="currentColor"
-                  >
-                    <path
-                      strokeLinecap="round"
-                      strokeLinejoin="round"
-                      strokeWidth={2}
-                      d="M8.684 13.342C8.886 12.938 9 12.482 9 12c0-.482-.114-.938-.316-1.342m0 2.684a3 3 0 110-2.684m0 2.684l6.632 3.316m-6.632-6l6.632-3.316m0 0a3 3 0 105.367-2.684 3 3 0 00-5.367 2.684zm0 9.316a3 3 0 105.368 2.684 3 3 0 00-5.368-2.684z"
-                    />
-                  </svg>
+                  <TaskAltOutlinedIcon/>
                 ),
                 title: 'Calidad',
-                subtitle: 'Brindar un servicio integral de gestión a la medida de cada cliente en forma honesta, respetuosa, eficiente y efectiva. Siempre orientados en el diseño de estrategias que permitan el creicimiento de vuestra organización.',
+                subtitle: 'Brindamos un servicio integral de gestión a la medida de cada cliente en forma honesta, respetuosa, eficiente y efectiva. Siempre orientados en el diseño de estrategias que permitan el crecimiento de nuestra organización.',
               },
             ].map((item, index) => (
               <ListItem key={index} disableGutters data-aos="fade-up">
@@ -155,7 +116,7 @@ const About = () => {
           justifyContent="center"
           alignItems="center"
           xs={12}
-          md={4}
+          md={6}
           data-aos={isMd ? 'fade-left' : 'fade-up'}
         >
           <Box component={Card} boxShadow={4} height={'100%'} width={'100%'}>

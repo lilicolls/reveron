@@ -16,7 +16,7 @@ const Footer = () => {
         color={'textSecondary'}
         align={'center'}
       >
-        Get Started
+        Iniciemos
       </Typography>
       <Box
         component={Typography}
@@ -25,7 +25,7 @@ const Footer = () => {
         gutterBottom
         align={'center'}
       >
-        Get started with Webbee today
+        ¡Déjanos acompañarte!
       </Box>
       <Typography
         variant={'h6'}

@@ -1,3 +1,4 @@
+/* eslint-disable  no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
 import Slider from 'react-slick';
@@ -10,6 +11,8 @@ import Typography from '@mui/material/Typography';
 import Avatar from '@mui/material/Avatar';
 import Grid from '@mui/material/Grid';
 import { colors } from '@mui/material';
+import server from './img/server.jpg';
+import buisness from './img/business.jpg';
 
 const Process = ({ themeMode = 'light' }) => {
   const theme = useTheme();
@@ -36,7 +39,7 @@ const Process = ({ themeMode = 'light' }) => {
         gutterBottom
         data-aos={isMd ? 'fade-right' : 'fade-up'}
       >
-        A simple, yet powerful process
+        Nuestra tecnología a su disposición
       </Box>
       <Typography
         variant={'h6'}
@@ -59,6 +62,8 @@ const Process = ({ themeMode = 'light' }) => {
       slidesToShow: 1,
       slidesToScroll: 1,
       arrows: false,
+      autoplay: true,
+      autoplaySpeed: 4000,
     };
 
     return (
@@ -87,6 +92,7 @@ const Process = ({ themeMode = 'light' }) => {
                 </svg>
               ),
               color: colors.amber,
+              img: server
             },
             {
               title: 'Design',
@@ -110,29 +116,7 @@ const Process = ({ themeMode = 'light' }) => {
                 </svg>
               ),
               color: colors.purple,
-            },
-            {
-              title: 'Development',
-              subtitle:
-                'We develop your website using the best practices and standards, so you have a perfectly responsive, lightning fast, SEO-friendly, and super scalable website.',
-              icon: (
-                <svg
-                  width={48}
-                  height={48}
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 24 24"
-                  stroke="currentColor"
-                >
-                  <path
-                    strokeLinecap="round"
-                    strokeLinejoin="round"
-                    strokeWidth={2}
-                    d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                  />
-                </svg>
-              ),
-              color: colors.green,
+              img: buisness
             },
           ].map((item, i) => (
             <Box padding={{ xs: 1, sm: 2 }} key={i}>
@@ -141,11 +125,23 @@ const Process = ({ themeMode = 'light' }) => {
                 boxShadow={{ xs: 1, sm: 3 }}
                 borderRadius={5}
                 padding={{ xs: 1, sm: 2, md: 3 }}
+                image={server}
+                sx={{
+                  background: 'red',
+                  backgroundImage:
+                    `url("${item.img}")`,
+                  backgroundRepeat: 'no-repeat',
+                  backgroundPosition: 'center',
+                  backgroundSize: 'cover',
+                }}
               >
                 <Box
                   component={CardContent}
                   display={'flex'}
                   flexDirection={'column'}
+                  sx={{
+                    visibility: 'hidden',
+                  }}
                 >
                   <Box
                     component={Avatar}
