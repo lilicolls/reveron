@@ -6,12 +6,24 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import { colors } from '@mui/material';
+import ListItemText from '@mui/material/ListItemText';
+import ListItemIcon from '@mui/material/ListItemIcon';
+import List from '@mui/material/List';
+import ListItem from '@mui/material/ListItem';
+import StarBorderIcon from '@mui/icons-material/StarBorder';
+import FiberManualRecordOutlinedIcon from '@mui/icons-material/FiberManualRecordOutlined';
+import GroupsSharpIcon from '@mui/icons-material/GroupsSharp';
+import JoinInnerSharpIcon from '@mui/icons-material/JoinInnerSharp';
+import JoinLeftSharpIcon from '@mui/icons-material/JoinLeftSharp';
+import JoinRightSharpIcon from '@mui/icons-material/JoinRightSharp';
+import { useTheme } from '@mui/material/styles';
 
 const Process = ({ themeMode = 'light' }) => {
+  const theme = useTheme();
   return (
     <Box>
       <Box marginBottom={4}>
-        <Typography
+        {/* <Typography
           sx={{
             textTransform: 'uppercase',
             fontWeight: 'medium',
@@ -21,15 +33,16 @@ const Process = ({ themeMode = 'light' }) => {
           align={'center'}
         >
           What we do
-        </Typography>
+        </Typography> */}
         <Box
           component={Typography}
           fontWeight={700}
           variant={'h3'}
           gutterBottom
           align={'center'}
+          marginBottom={2}
         >
-          You do business we do the softwere
+          Tu haces negocios <br /> nosotros impulsamos tu gestión
         </Box>
         <Typography
           variant={'h6'}
@@ -37,8 +50,8 @@ const Process = ({ themeMode = 'light' }) => {
           color={'textSecondary'}
           align={'center'}
         >
-          Since 2007, we have helped 25 companies launch over 1k incredible
-          products
+          Desde 1990, hemos ayudado a 100 empresas de distintos sectores en la segmentación de carteras, 
+          concretar cobranzas y en mejorar sus indicadores de atención de clientes
         </Typography>
         {/* <Box marginTop={3} display={'flex'} justifyContent={'center'}>
           <Box
@@ -68,80 +81,55 @@ const Process = ({ themeMode = 'light' }) => {
           </Box>
         </Box> */}
       </Box>
-      <Grid container spacing={4}>
+      <Grid container spacing={4} marginTop={3}>
         {[
           {
             title: 'Misión',
             subtitle:
-              'We meet with your team to know more about your project idea and goals. After that, our team will work together to create an action plan and proposal for your project.',
+              `Brindar un servicio integral de gestión de cobranza a la medida de cada cliente en forma honesta, 
+              respetuosa, eficiente y efectiva, orientados a la mejora continua en lo que respecta a sus indicadores 
+              de recuperación y en el diseño de estrategias orientadas a maximizar los resultados generando valor en las 
+              arrasad de cobranzas, telemarketing, análisis de crédito y fidelización de clientes.`,
             icon: (
-              <svg
-                width={40}
-                height={40}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M9.663 17h4.673M12 3v1m6.364 1.636l-.707.707M21 12h-1M4 12H3m3.343-5.657l-.707-.707m2.828 9.9a5 5 0 117.072 0l-.548.547A3.374 3.374 0 0014 18.469V19a2 2 0 11-4 0v-.531c0-.895-.356-1.754-.988-2.386l-.548-.547z"
-                />
-              </svg>
+              <JoinLeftSharpIcon/>
             ),
-            color: colors.amber,
           },
           {
             title: 'Visión',
             subtitle:
-              'We start by designing a mockup or prototype of your website, and present it to you. Once with the initial mockup, we start the revision process to perfect it.',
+              `Ser una empresa de Servicios de atención al cliente y gestión de cobranzas exitosa 
+              reconocida por la calidad, excelencia operativa y continua inovación, impulsada por el talento de nuestro recurso humano, 
+              guiada por un modelo de negocio que comparte el riesgo y la rentabilidad.`,
             icon: (
-              <svg
-                width={40}
-                height={40}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M12 6V4m0 2a2 2 0 100 4m0-4a2 2 0 110 4m-6 8a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4m6 6v10m6-2a2 2 0 100-4m0 4a2 2 0 110-4m0 4v2m0-6V4"
-                />
-              </svg>
+              <JoinInnerSharpIcon/>
             ),
-            color: colors.purple,
           },
-          {
-            title: 'Valores',
-            subtitle:
-              'We develop your website using the best practices and standards, so you have a perfectly responsive, lightning fast, SEO-friendly, and super scalable website.',
-            icon: (
-              <svg
-                width={40}
-                height={40}
-                xmlns="http://www.w3.org/2000/svg"
-                fill="none"
-                viewBox="0 0 24 24"
-                stroke="currentColor"
-              >
-                <path
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  strokeWidth={2}
-                  d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-                />
-              </svg>
-            ),
-            color: colors.green,
-          },
+          // {
+          //   title: 'Valores',
+          //   subtitle:
+          //     'We develop your website using the best practices and standards, so you have a perfectly responsive, lightning fast, SEO-friendly, and super scalable website.',
+          //   icon: (
+          //     <svg
+          //       width={40}
+          //       height={40}
+          //       xmlns="http://www.w3.org/2000/svg"
+          //       fill="none"
+          //       viewBox="0 0 24 24"
+          //       stroke="currentColor"
+          //     >
+          //       <path
+          //         strokeLinecap="round"
+          //         strokeLinejoin="round"
+          //         strokeWidth={2}
+          //         d="M8 9l3 3-3 3m5 0h3M5 20h14a2 2 0 002-2V6a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
+          //       />
+          //     </svg>
+          //   ),
+          //   color: colors.green,
+          // },
         ].map((item, i) => (
           <Grid item xs={12} md={4} key={i}>
-            <Box color={item.color[themeMode === 'light' ? 500 : 700]}>
+            <Box color={theme.palette.primary.main}>
               {item.icon}
             </Box>
             <Box
@@ -155,6 +143,50 @@ const Process = ({ themeMode = 'light' }) => {
             <Typography color="text.secondary">{item.subtitle}</Typography>
           </Grid>
         ))}
+        <Grid item xs={12} md={4} >
+          <Box color={theme.palette.primary.main}>
+            <JoinRightSharpIcon/>
+          </Box>
+          <Box
+            component={Typography}
+            variant={'h6'}
+            fontWeight={500}
+          >
+            Valores
+          </Box>
+          <Box>
+            <List sx={{ width: '100%', maxWidth: 360 }}>
+              {[
+                {title: 'Confidencialidad.'},
+                {title: 'Responsabilidad.'},
+                {title: 'Honestidad.'},
+                {title: 'Compromiso.'},
+                {title: 'Trabajo en equipo.'}
+              ].map((item, i) => {
+                const labelId = `checkbox-list-label-${i}`;
+
+                return (
+                  <ListItem
+                    key={i}
+                    disablePadding
+                  >
+                    <ListItemIcon>
+                      <FiberManualRecordOutlinedIcon sx={{height: '12px', width: '12px'}}
+                      />
+                    </ListItemIcon>
+                    <ListItemText id={labelId} primary={`${item.title}`} 
+                      sx={{
+                        marginLeft: -4,
+                      }}
+                    />
+
+                  </ListItem>
+                );
+              })}
+            </List>
+          </Box>
+          {/* <Typography color="text.secondary">Otros textos</Typography> */}
+        </Grid>
       </Grid>
     </Box>
   );

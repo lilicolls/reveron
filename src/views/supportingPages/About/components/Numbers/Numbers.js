@@ -9,16 +9,16 @@ const Numbers = () => {
       <Grid container spacing={2}>
         {[
           {
-            title: 12,
-            subtitle: '12 years in business.',
+            title: '30+',
+            subtitle: '30 años de servicios.',
           },
           {
-            title: '5,2K',
-            subtitle: '5.200 sold copies',
+            title: '50+',
+            subtitle: 'Más de 50 clientes',
           },
           {
-            title: '99%',
-            subtitle: '99% customer statisfication.',
+            title: '150+',
+            subtitle: '150 posiciones en latinoamerica y el resto del mundo',
           },
         ].map((item, i) => (
           <Grid key={i} item xs={12} md={4}>

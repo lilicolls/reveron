@@ -13,13 +13,19 @@ import citi from './icons/citi.svg';
 import gama from './icons/gama.svg';
 import gsaBlue from './icons/gsaBlue.svg';
 import reveron from './icons/logoReveron.svg';
+import americanExpress from './icons/americanExpress.svg';
+import aeroCar from './icons/logo-aero.png';
+import Grid from '@mui/material/Grid';
+import tracker from './icons/tracker.svg';
+import bnc from './icons/bnc.png';
+import bExterior from './icons/bExterior.svg';
 
 
 
 const Partners = () => {
   const theme = useTheme();
   return (
-    <Box>
+    <Grid container flexDirection={'column'} alignItems='center'>
       <Box marginBottom={4}>
         <Typography
           sx={{
@@ -33,7 +39,7 @@ const Partners = () => {
           Nuestros clientes
         </Typography>
       </Box>
-      <Box display="flex" flexWrap="wrap" justifyContent={'center'}>
+      <Grid container display="flex" flexWrap="wrap" justifyContent={'space-between'} md={9}>
         {[
           gedcoIcon,
           bbva,
@@ -44,12 +50,17 @@ const Partners = () => {
           gsaBlue,
           creditiaSvg,
           estudioWeisfeld,
-          // reveron
+          americanExpress,
+          aeroCar,
+          tracker,
+          bnc,
+          bExterior
         ].map((item, i) => (
-          <Box maxWidth={90} marginTop={2} marginRight={4} key={i}>
+          <Grid item maxWidth={90}  marginRight={4} key={i}
+            display= 'flex' alignItems= 'center'>
             <Box
               component="img"
-              height={'100%'}
+              height={'auto'}
               width={'100%'}
               src={item}
               alt="..."
@@ -60,10 +71,10 @@ const Partners = () => {
                     : 'none',
               }}
             />
-          </Box>
+          </Grid>
         ))}
-      </Box>
-    </Box>
+      </Grid>
+    </Grid>
   );
 };
 

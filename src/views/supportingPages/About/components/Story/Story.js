@@ -1,9 +1,13 @@
+/* eslint-disable  no-unused-vars */
 import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import TeamWorkingIllustration from 'svg/illustrations/TeamWorking';
+import Illustration from './img/illustration.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import { Partners } from '../../../../landingPages/Home/components';
 
 const Story = () => {
   const theme = useTheme();
@@ -19,7 +23,7 @@ const Story = () => {
           color={'textSecondary'}
           align={'center'}
         >
-          Our story
+          Nuestra historia
         </Typography>
         <Box
           component={Typography}
@@ -28,9 +32,9 @@ const Story = () => {
           gutterBottom
           align={'center'}
         >
-          We design and implement creative solutions
+          Diseñamos e implementamos soluciones creativas
           <br />
-          to everyday business problems
+          a tus problemas comerciales cotidianos
         </Box>
         <Typography
           variant={'h6'}
@@ -38,11 +42,12 @@ const Story = () => {
           color={'textSecondary'}
           align={'center'}
         >
-          We are a team of creative consultants who help bridge the digital gap
-          between companies and their clients with websites that not only serve
-          as marketing platforms but also provide solutions to online business
-          problems and digital marketing strategies that connect you with the
-          ideal client and help create a loyal customer.
+          Conformamos una Sociedad civil de profesionales del derecho, con personalidad jurídica propia, fundada en el año 1990. 
+          Somos una empresa especializada en servicios de atención al cliente y gestión de cobranzas con una amplia experiencia 
+          en el manejo de productos bancarios y comerciales en distintos sectores: financieras, E-comerce, seguros, clínicas, 
+          telecomunicaciones entre otras Para ello contamos con un recurso humano especializado y una plataforma tecnológica
+          adaptable a las necesidades de nuestros clientes.
+
         </Typography>
         <Box marginTop={3} display={'flex'} justifyContent={'center'}>
           <Box
@@ -79,11 +84,24 @@ const Story = () => {
         marginBottom={4}
       >
         <Box height={'100%'} width={'100%'} maxWidth={600}>
-          <TeamWorkingIllustration height={'100%'} width={'100%'} />
+          <LazyLoadImage
+            height={'100%'}
+            width={'100%'}
+            src={Illustration}
+            alt="..."
+            effect="blur"
+            style={{
+              objectFit: 'cover',
+              cursor: 'poiner',
+              borderRadius: 4,
+            }}
+          />
+          {/* <TeamWorkingIllustration height={'100%'} width={'100%'} /> */}
         </Box>
       </Box>
       <Box>
-        <Typography
+        <Partners/>
+        {/* <Typography
           sx={{
             textTransform: 'uppercase',
             fontWeight: 'medium',
@@ -119,7 +137,7 @@ const Story = () => {
               />
             </Box>
           ))}
-        </Box>
+        </Box> */}
       </Box>
     </Box>
   );

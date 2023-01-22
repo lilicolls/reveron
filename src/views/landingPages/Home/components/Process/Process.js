@@ -39,7 +39,7 @@ const Process = ({ themeMode = 'light' }) => {
         gutterBottom
         data-aos={isMd ? 'fade-right' : 'fade-up'}
       >
-        Nuestra tecnología a su disposición
+        Nuestra tecnología a tu disposición
       </Box>
       <Typography
         variant={'h6'}
@@ -47,9 +47,9 @@ const Process = ({ themeMode = 'light' }) => {
         color={'textSecondary'}
         data-aos={isMd ? 'fade-right' : 'fade-up'}
       >
-        Contamos con un personal especializado de TI para brindar soporte de manera oportuna a nuestros equipos,
-        <br />
-          agentes y clientes lo que garantiza las continuidad de las operaciones.
+        Contamos con un personal especializado de TI para brindar soporte de manera oportuna a nuestros equipos
+        {/* <br /> */}
+        de  agentes y clientes lo que garantiza las continuidad de las operaciones.
       </Typography>
     </Box>
   );

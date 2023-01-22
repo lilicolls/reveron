@@ -1,3 +1,4 @@
+/* eslint-disable  no-unused-vars */
 import React, { useState } from 'react';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import Lightbox from 'react-image-lightbox';
@@ -7,6 +8,11 @@ import Box from '@mui/material/Box';
 import ImageList from '@mui/material/ImageList';
 import ImageListItem from '@mui/material/ImageListItem';
 import Button from '@mui/material/Button';
+import img1 from './img/img1.jpg';
+import img2 from './img/img2.jpg';
+import img3 from './img/img3.jpg';
+import img4 from './img/img4.jpg';
+import img5 from './img/img5.jpg';
 
 const Gallery = () => {
   const theme = useTheme();
@@ -29,27 +35,27 @@ const Gallery = () => {
 
   const photos = [
     {
-      src: 'https://assets.maccarianagency.com/backgrounds/img23.jpg',
+      src: img1,
       rows: 2,
       cols: 1,
     },
     {
-      src: 'https://assets.maccarianagency.com/backgrounds/img25.jpg',
+      src: img2,
       rows: 1,
       cols: 2,
     },
     {
-      src: 'https://assets.maccarianagency.com/backgrounds/img22.jpg',
+      src: img3,
       rows: 1,
       cols: 1,
     },
     {
-      src: 'https://assets.maccarianagency.com/backgrounds/img24.jpg',
+      src: img5,
       rows: 1,
       cols: 1,
     },
     {
-      src: 'https://assets.maccarianagency.com/backgrounds/img21.jpg',
+      src: img4,
       rows: 1,
       cols: 2,
     },
@@ -59,7 +65,7 @@ const Gallery = () => {
 
   return (
     <Box>
-      <Box display={'flex'} justifyContent={'flex-end'} marginBottom={2}>
+      {/* <Box display={'flex'} justifyContent={'flex-end'} marginBottom={2}>
         <Button
           color="primary"
           size="large"
@@ -84,7 +90,7 @@ const Gallery = () => {
         >
           Open the gallery
         </Button>
-      </Box>
+      </Box> */}
       <Box>
         <ImageList
           variant="quilted"

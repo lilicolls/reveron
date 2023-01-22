@@ -33,8 +33,8 @@ const Footer = () => {
         color={'textSecondary'}
         align={'center'}
       >
-        Build a beautiful, modern website with flexible, fully customizable,
-        atomic Material-UI components.
+        Prestamos un  servicio del más alto nivel profesional, con productos y servicios acorde a 
+        las necesidades de nuestros clientes, de manera que se logre un rendimiento óptimo de los recursos y principalmente, el tiempo.
       </Typography>
       <Box marginTop={3} display={'flex'} justifyContent={'center'}>
         <Button

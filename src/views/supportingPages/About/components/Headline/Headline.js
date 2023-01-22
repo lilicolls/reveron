@@ -26,7 +26,7 @@ const Headline = () => {
       }}
     >
       <Box position="relative" zIndex={2}>
-        <Typography
+        {/* <Typography
           sx={{
             textTransform: 'uppercase',
             fontWeight: 'medium',
@@ -36,7 +36,7 @@ const Headline = () => {
           align={'center'}
         >
           About us
-        </Typography>
+        </Typography> */}
         <Box marginBottom={2}>
           <Typography
             variant="h2"
@@ -45,16 +45,18 @@ const Headline = () => {
               fontWeight: 700,
             }}
           >
-            We take you by hand on each
+          Te llevamos de la mano en cada
             <br />
-            step of the process
+          paso del proceso
           </Typography>
         </Box>
         <Box marginBottom={4}>
           <Typography variant="h6" align={'center'} color={'textSecondary'}>
-            As experts in both design & development, we help you go through the
-            complete process. From your new website idea, to design,
-            development, launch and scale!
+            Como expertos en atención de clientes y procesos de de cobranzas, lo ayudamos y 
+            asesoramos durante todo el proceso. 
+            ¡Desde la necesidad inicial comprendiendo diseño y estrategia en el campo que requiera, 
+            operación, análisis de resultados y escalamiento!
+
           </Typography>
         </Box>
         <Box display="flex" justifyContent={'center'}>
