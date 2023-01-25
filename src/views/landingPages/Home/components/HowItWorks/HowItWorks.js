@@ -94,7 +94,7 @@ const HowItWorks = () => {
           {
             title: 'Portabilidad',
             subtitle:
-              'A través de la ejecución de campañas de portabilidad, nuestro equipo de agentes realiza un análisis comparativo que permiten ofrecerle al usuario una propuesta de valor y, así atraer y captar nuevos clientes de su competencia directa, aportando al crecimiento de su organización.',
+              'A través de la ejecución de campañas de portabilidad, nuestro equipo de agentes realiza un análisis comparativo que permiten ofrecerle al usuario una propuesta de valor y, así captar nuevos clientes de su competencia directa, aportando al crecimiento de su organización.',
             icon: (
               <QueryStatsOutlinedIcon/>
             ),

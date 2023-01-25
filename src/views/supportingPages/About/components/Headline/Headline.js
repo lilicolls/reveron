@@ -47,15 +47,13 @@ const Headline = () => {
           >
           Te llevamos de la mano en cada
             <br />
-          paso del proceso
+          parte del proceso
           </Typography>
         </Box>
         <Box marginBottom={4}>
           <Typography variant="h6" align={'center'} color={'textSecondary'}>
-            Como expertos en atención de clientes y procesos de de cobranzas, lo ayudamos y 
-            asesoramos durante todo el proceso. 
-            ¡Desde la necesidad inicial comprendiendo diseño y estrategia en el campo que requiera, 
-            operación, análisis de resultados y escalamiento!
+          Como expertos en atención de clientes y gestión de de cobranzas, lo ayudamos y asesoramos durante todo el proceso. 
+          ¡Desde la necesidad inicial comprendiendo diseño y estrategia en el campo que requiera, operación, análisis de resultados y escalamiento!
 
           </Typography>
         </Box>

@@ -43,10 +43,9 @@ const Story = () => {
           align={'center'}
         >
           Conformamos una Sociedad civil de profesionales del derecho, con personalidad jurídica propia, fundada en el año 1990. 
-          Somos una empresa especializada en servicios de atención al cliente y gestión de cobranzas con una amplia experiencia 
-          en el manejo de productos bancarios y comerciales en distintos sectores: financieras, E-comerce, seguros, clínicas, 
-          telecomunicaciones entre otras Para ello contamos con un recurso humano especializado y una plataforma tecnológica
-          adaptable a las necesidades de nuestros clientes.
+          Nos especializamos en servicios de atención al cliente y gestión de cobranzas con una amplia experiencia en el manejo 
+          de productos bancarios y comerciales en distintos sectores: 
+          financieras, E-comerce, seguros, clínicas, telecomunicaciones entre otras.
 
         </Typography>
         <Box marginTop={3} display={'flex'} justifyContent={'center'}>

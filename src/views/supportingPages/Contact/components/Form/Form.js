@@ -1,5 +1,6 @@
 /* eslint-disable react/no-unescaped-entities */
-import React from 'react';
+/* eslint-disable  no-unused-vars */
+import React, {useState} from 'react';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
@@ -9,13 +10,26 @@ import TextField from '@mui/material/TextField';
 import Typography from '@mui/material/Typography';
 import Divider from '@mui/material/Divider';
 import Grid from '@mui/material/Grid';
+import Radio from '@mui/material/Radio';
+import RadioGroup from '@mui/material/RadioGroup';
+import FormControlLabel from '@mui/material/FormControlLabel';
+import FormControl from '@mui/material/FormControl';
+import FormLabel from '@mui/material/FormLabel';
+import Chip from '@mui/material/Chip';
 
 const Form = () => {
   const theme = useTheme();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
+  const [activeCategory, setActiveCategory] = useState('deal');
 
+  const updateCategory = (e) => {
+    console.log('update form', e);
+    setActiveCategory(e);
+  };
+
+  //category could be, suggestions, job, deal
   return (
     <Box>
       <Box
@@ -28,6 +42,64 @@ const Form = () => {
       >
         <form noValidate autoComplete="off">
           <Grid container spacing={isMd ? 4 : 2}>
+            <Grid item xs={12} sm={12} display='flex' columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+              <Grid item >
+                <Chip
+                  variant={activeCategory === 'deal'? 'filled' : 'outlined'}
+                  color="primary"
+                  size="medium"
+                  value="deal"
+                  label= "Contacto comercial"
+                  onClick={(e) => updateCategory('deal')}
+                  clickable
+                >
+                </Chip>
+              </Grid>
+              <Grid item >
+                <Chip
+                  variant={activeCategory === 'suggestions'? 'filled' : 'outlined'}
+                  color="primary"
+                  size="medium"
+                  value="suggestions"
+                  label= " Sugerencias o reclamos"
+                  onClick={(e) => updateCategory('suggestions')}
+                  clickable
+                >
+                </Chip>
+              </Grid>
+              <Grid item > 
+                <Chip
+                  variant={activeCategory === 'work'? 'filled' : 'outlined'}
+                  color="primary"
+                  size="medium"
+                  value="work"
+                  onClick={(e) => updateCategory('work')}
+                  label="Trabaja con nosotros"
+                  clickable
+                >
+                </Chip>
+
+              </Grid>
+              
+
+            </Grid>
+            <Grid item xs={12} sm={12}>
+              {activeCategory === 'suggestions' && (
+                <FormControl>
+                  <FormLabel id="demo-row-radio-buttons-group-label">Gender</FormLabel>
+                  <RadioGroup
+                    row
+                    aria-labelledby="demo-row-radio-buttons-group-label"
+                    name="row-radio-buttons-group"
+                  >
+                    <FormControlLabel value="female" control={<Radio />} label="Cliente" />
+                    <FormControlLabel value="male" control={<Radio />} label="Cliente potencial" />
+                    <FormControlLabel value="other" control={<Radio />} label="Otro" />
+                  </RadioGroup>
+                </FormControl> 
+              )}
+            </Grid>
+            
             <Grid item xs={12} sm={6}>
               <TextField
                 sx={{ height: 54 }}
@@ -48,7 +120,7 @@ const Form = () => {
                 fullWidth
               />
             </Grid>
-            <Grid item xs={12}>
+            <Grid item xs={12} sm={4}>
               <TextField
                 sx={{ height: 54 }}
                 label="Email"
@@ -58,7 +130,59 @@ const Form = () => {
                 size="medium"
                 fullWidth
               />
+              
             </Grid>
+            <Grid item xs={12} sm={4}>
+              <TextField
+                sx={{ height: 54 }}
+                label="phone"
+                type="phone"
+                variant="outlined"
+                color="primary"
+                size="medium"
+                fullWidth
+              />
+            </Grid>
+            <Grid item xs={12} sm={4}>
+              <TextField
+                sx={{ height: 54 }}
+                label="country"
+                type="text"
+                variant="outlined"
+                color="primary"
+                size="medium"
+                fullWidth
+              />
+            </Grid>
+
+            <Grid item xs={12} sm={4}>
+              <TextField
+                sx={{ height: 54 }}
+                label="Company"
+                type="text"
+                variant="outlined"
+                color="primary"
+                size="medium"
+                fullWidth
+              />
+            </Grid>
+
+
+            {activeCategory === 'deal' && (
+              <Grid item xs={12} sm={4}>
+                <TextField
+                  sx={{ height: 54 }}
+                  label="Company size"
+                  type="text"
+                  variant="outlined"
+                  color="primary"
+                  size="medium"
+                  fullWidth
+                />
+              </Grid>
+                
+            )}
+
             <Grid item xs={12}>
               <TextField
                 label="Message"

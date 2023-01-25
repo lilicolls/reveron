@@ -49,7 +49,7 @@ const Process = ({ themeMode = 'light' }) => {
       >
         Contamos con un personal especializado de TI para brindar soporte de manera oportuna a nuestros equipos
         {/* <br /> */}
-        de  agentes y clientes lo que garantiza las continuidad de las operaciones.
+        de  agentes y clientes, lo que garantiza la continuidad de las operaciones.
       </Typography>
     </Box>
   );

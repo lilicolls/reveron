@@ -1,3 +1,4 @@
+/* eslint-disable  no-unused-vars */
 import React from 'react';
 import PropTypes from 'prop-types';
 import { useTheme } from '@mui/material/styles';
@@ -12,6 +13,9 @@ import {
   SeenOn,
   WhatWeDo,
 } from './components';
+// import { Partners } from '../../../../landingPages/Home/components';
+import { Partners } from '../../landingPages/Home/components';
+
 
 const Services = ({ themeMode = 'light' }) => {
   const theme = useTheme();
@@ -29,24 +33,34 @@ const Services = ({ themeMode = 'light' }) => {
       </Container>
       <Box bgcolor={theme.palette.alternate.main}>
         <Container>
-          <SeenOn />
+          <Partners />
         </Container>
       </Box>
       <Container>
         <Process themeMode={themeMode} />
       </Container>
-      <Container
-        sx={{
-          backgroundImage:
-            'url("https://assets.maccarianagency.com/backgrounds/img1.jpg")',
-          backgroundRepeat: 'no-repeat',
-          backgroundPosition: 'center',
-          backgroundSize: 'cover',
-        }}
-        borderRadius={isSm ? 4 : 0}
-      >
-        <Reviews />
-      </Container>
+      <Box bgcolor={theme.palette.alternate.main} sx={{ padding: isSm? 6: 0}} position={'relative'} >
+        <Container
+          sx={{
+            backgroundImage:
+              'url("https://assets.maccarianagency.com/backgrounds/img1.jpg")',
+            backgroundRepeat: 'no-repeat',
+            backgroundPosition: 'center',
+            backgroundSize: 'cover',
+            '&:after': {
+              opacity:'0.2',
+              position: 'absolute',
+              zIndex: 1,
+            }
+          }}
+          borderRadius={isSm ? 4 : 0}
+          
+        >
+          <Reviews />
+      
+        </Container>
+
+      </Box>
       <Container>
         <Contact />
       </Container>

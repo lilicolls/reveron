@@ -44,10 +44,9 @@ const About = () => {
           align={'center'}
           data-aos="fade-up"
         >
-          Con una amplia trayectoria desde nuestra conformación en 1990,
-          <br />
-          hemos acompañado a muchas empresas en la recuperación de carteras y procesos de <br/>
-          cobranzas así como en distintas campañas de telemarketing y fidelización de clientes.
+          A través de nuestra amplia trayectoria hemos acompañado a muchas empresas en la recuperación de carteras y <br />
+          procesos de cobranzas así como en distintas campañas de telemarketing y fidelización de clientes.
+          
         </Typography>
       </Box>
       <Grid container spacing={4} direction={isMd ? 'row' : 'column-reverse'}>
@@ -65,7 +64,8 @@ const About = () => {
               en lo importante
             </Box>
             <Typography variant={'h6'} component={'p'} color={'textSecondary'}>
-            Mantenemos nuestra metodología y valores durante más de 30 años, siempre incorporando a nuestros procesos nuevas y robustas plataformas de tecnología que apalancan nuestro crecimiento.
+            Desde nuestra conformación en 1990, hemos mantenido nuestra metodología y valores, siempre incorporando 
+            a nuestros procesos nuevas y robustas plataformas de tecnología que apalancan nuestro crecimiento.
             </Typography>
           </Box>
           <List disablePadding>
@@ -91,7 +91,7 @@ const About = () => {
                   <TaskAltOutlinedIcon/>
                 ),
                 title: 'Calidad',
-                subtitle: 'Brindamos un servicio integral de gestión a la medida de cada cliente en forma honesta, respetuosa, eficiente y efectiva. Siempre orientados en el diseño de estrategias que permitan el crecimiento de nuestra organización.',
+                subtitle: 'Brindamos un servicio integral de gestión a la medida de cada cliente en forma honesta, respetuosa, eficiente y efectiva. Siempre orientados en el diseño de estrategias que permitan el crecimiento de su empresa.',
               },
             ].map((item, index) => (
               <ListItem key={index} disableGutters data-aos="fade-up">

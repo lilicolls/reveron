@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5f04cf32.css",
-    "main.js": "/static/js/main.36cd13ab.js",
+    "main.js": "/static/js/main.ec3293c2.js",
     "static/js/27.cf1a19d6.chunk.js": "/static/js/27.cf1a19d6.chunk.js",
     "static/media/video.mp4": "/static/media/video.9bf1c1dd854dcd39776b.mp4",
     "static/media/office.jpg": "/static/media/office.1024d9ab372c519e25aa.jpg",
@@ -15,11 +15,15 @@
     "static/media/img1.jpg": "/static/media/img1.0c10754c3252985fabbf.jpg",
     "static/media/img2.jpg": "/static/media/img2.706d87fb3448d56f4b9c.jpg",
     "static/media/img3.jpg": "/static/media/img3.0673571ebd6098254b99.jpg",
+    "static/media/callCenter.jpg": "/static/media/callCenter.da130c2ba1164ebf8ea6.jpg",
     "static/media/computer.jpg": "/static/media/computer.9def9261118e4cb56cc6.jpg",
     "static/media/server.jpg": "/static/media/server.998358aee2d20b89f734.jpg",
     "static/media/business.jpg": "/static/media/business.2aea28cd65b1e4224353.jpg",
+    "static/media/building.jpeg": "/static/media/building.60dd356304388a12e1b7.jpeg",
     "static/media/illustration.jpg": "/static/media/illustration.2ea914259f43a7c3fcff.jpg",
+    "static/media/building2.jpeg": "/static/media/building2.c7be6c42cf81d83bddd3.jpeg",
     "static/media/bnc.png": "/static/media/bnc.8bdf3f24434fbedd1b80.png",
+    "static/media/lasMercedes.svg": "/static/media/lasMercedes.ba7d8fd1aa447c24863a7662b1d7ee92.svg",
     "static/media/logoReveron.svg": "/static/media/logoReveron.c9856b7bbac678ce3765c2203ecdedd4.svg",
     "static/media/tracker.svg": "/static/media/tracker.dfa52830500ccb1383b0b90068b66c07.svg",
     "static/media/bExterior.svg": "/static/media/bExterior.977f650c65bda6072c1cfa444825eef6.svg",
@@ -29,18 +33,19 @@
     "static/media/creditia.svg": "/static/media/creditia.faba7c0451c30c9c2ff96e04538bde56.svg",
     "static/media/movistar.svg": "/static/media/movistar.ffe2845d8314e0dc2c81d00b064d5268.svg",
     "static/media/gedco.svg": "/static/media/gedco.5cebb206068e15da384473b853b07006.svg",
-    "static/media/americanExpress.svg": "/static/media/americanExpress.90de1460a59f64857ab7d6d921eae0ff.svg",
+    "static/media/americanExpress.svg": "/static/media/americanExpress.b1d263a95ee4ed4e92191e26b4bbca85.svg",
     "static/media/slick.svg": "/static/media/slick.2630a3e3eab21c607e21.svg",
     "static/media/slick.eot": "/static/media/slick.a4e97f5a2a64f0ab1323.eot",
     "static/media/gama.svg": "/static/media/gama.4cf2fa41c8dabb61195a648213344cfd.svg",
     "static/media/slick.ttf": "/static/media/slick.c94f7671dcc99dce43e2.ttf",
     "static/media/gsaBlue.svg": "/static/media/gsaBlue.4a0234e90faaa9ccc95dae4fe73dd9ef.svg",
+    "static/media/americanExpressDarkTheme.svg": "/static/media/americanExpressDarkTheme.0792ec696bc0cf9f9ad8c7bb091e2cb7.svg",
     "static/media/slick.woff": "/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/index.html",
     "static/media/citi.svg": "/static/media/citi.d4b5903d431219219039bc5cf34ec76f.svg"
   },
   "entrypoints": [
     "static/css/main.5f04cf32.css",
-    "static/js/main.36cd13ab.js"
+    "static/js/main.ec3293c2.js"
   ]
 }

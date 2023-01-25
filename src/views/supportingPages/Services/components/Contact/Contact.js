@@ -20,12 +20,13 @@ const Contact = () => {
           }}
           variant={'h6'}
         >
-          Have a project to discuss?
+          ¿Tienes un proyecto en mente?
         </Typography>
         <Button
           variant="contained"
           color="primary"
           size="large"
+          href="/page-contact"
           endIcon={
             <svg
               width={16}
@@ -48,7 +49,7 @@ const Contact = () => {
             marginTop: { xs: 2, sm: 0 },
           }}
         >
-          Contact us
+          Contactanos
         </Button>
       </Box>
     </Box>

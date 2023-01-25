@@ -1,8 +1,11 @@
+/* eslint-disable  no-unused-vars */
 import React from 'react';
 import Box from '@mui/material/Box';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import DesignerIllustration from 'svg/illustrations/Designer';
+import callCenter from './img/callCenter.jpg';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 const Hero = () => {
   return (
@@ -17,7 +20,7 @@ const Hero = () => {
           color={'textSecondary'}
           align={'center'}
         >
-          Our services
+          Nuestros servicios
         </Typography>
         <Box
           component={Typography}
@@ -26,7 +29,7 @@ const Hero = () => {
           gutterBottom
           align={'center'}
         >
-          High-impact design & development services
+          Generamos valor mejorando la experiencia de sus clientes y rentabilizando la operación comercial.
         </Box>
         <Typography
           variant={'h6'}
@@ -34,9 +37,7 @@ const Hero = () => {
           color={'textSecondary'}
           align={'center'}
         >
-          As experts in both design & development, we help you go through the
-          complete process. From your new website idea, to design, development,
-          launch and scale!
+          Nos enfocamos en revalorizar la importancia del servicio de atención al cliente y gestión de cobranzas, apoyando con nuestro trabajo a mejorar la imagen de las marcas y su evolución en el mercado. Nos enfocamos sobre tus objetivos en atención al cliente, para poder ofrecerte una propuesta de valor y mejorar la rentabilidad de tu negocio.
         </Typography>
         <Box marginTop={3} display={'flex'} justifyContent={'center'}>
           <Box
@@ -64,11 +65,27 @@ const Hero = () => {
           >
             Contact us
           </Box>
+
+          
         </Box>
       </Box>
       <Box display={'flex'} justifyContent={'center'} alignItems={'center'}>
-        <Box height={'100%'} width={'100%'} maxWidth={600}>
-          <DesignerIllustration height={'100%'} width={'100%'} />
+     
+        {/* <DesignerIllustration height={'100%'} width={'100%'} /> */}
+        <Box height={'100%'} width={'100%'}>
+          <LazyLoadImage
+            height={'100%'}
+            width={'100%'}
+            src={callCenter}
+            alt="..."
+            effect="blur"
+            style={{
+              objectFit: 'cover',
+              cursor: 'poiner',
+              borderRadius: 4,
+            }}
+          />
+          {/* <TeamWorkingIllustration height={'100%'} width={'100%'} /> */}
         </Box>
       </Box>
     </Box>

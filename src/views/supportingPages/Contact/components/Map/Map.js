@@ -8,7 +8,7 @@ import Grid from '@mui/material/Grid';
 const Map = ({ themeMode = 'light' }) => {
   return (
     <Box>
-      <Box>
+      {/* <Box>
         <Typography
           sx={{
             textTransform: 'uppercase',
@@ -34,7 +34,7 @@ const Map = ({ themeMode = 'light' }) => {
             We'd love to talk about how we can help you.
           </Typography>
         </Box>
-      </Box>
+      </Box> */}
       <Box marginY={4}>
         <Box
           component={'iframe'}

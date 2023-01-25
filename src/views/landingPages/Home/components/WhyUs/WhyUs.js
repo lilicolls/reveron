@@ -43,8 +43,7 @@ const WhyUs = () => {
         >
           Disponemos de una infraestructura tecnológica y de comunicaciones
           <br />
-          que permite ofrecer servicios de calidad en forma continua 
-          y con altos estandares de seguridad.
+          la cual nos permite ofrecer servicios de calidad en forma continua y con altos estándares de seguridad.
        
 
         </Typography>

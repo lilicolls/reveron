@@ -74,9 +74,9 @@ const Services = ({ themeMode = 'light' }) => {
             subtitle:
                 `Sin importar tu sector, nuestro equipo te acompaña durante todo el proceso
                 \n
-                de cobranzas, reclutamiento, selección, análisis de crédito, levantamiento de datos,  
+                de cobranzas, reclutamiento, selección, análisis de crédito, levantamiento de datos y  
                 \n
-                recuperación de cartera con servicios enfocados en la excelencia de atención al cliente.`,
+                recuperación de carteras.`,
             img: coffe,
           },
           {
@@ -103,7 +103,7 @@ const Services = ({ themeMode = 'light' }) => {
             title: 'Gestión y enfoque',
             subtitle: `Mantenemos segmentados nuestro proceso y planificamos de 
             \n
-            forma estratégica para lograr la confianza de nuestros clientes finales,
+            forma estratégica para consolidar la confianza de nuestros clientes finales,
             \n
             logrando así los objetivos de ventas,
             \n

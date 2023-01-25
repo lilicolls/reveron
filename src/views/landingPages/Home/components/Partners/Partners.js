@@ -14,11 +14,13 @@ import gama from './icons/gama.svg';
 import gsaBlue from './icons/gsaBlue.svg';
 import reveron from './icons/logoReveron.svg';
 import americanExpress from './icons/americanExpress.svg';
+import americanExpressDarkTheme from './icons/americanExpressDarkTheme.svg';
 import aeroCar from './icons/logo-aero.png';
 import Grid from '@mui/material/Grid';
 import tracker from './icons/tracker.svg';
 import bnc from './icons/bnc.png';
 import bExterior from './icons/bExterior.svg';
+import lasMercedes from './icons/lasMercedes.svg';
 
 
 
@@ -39,24 +41,26 @@ const Partners = () => {
           Nuestros clientes
         </Typography>
       </Box>
-      <Grid container display="flex" flexWrap="wrap" justifyContent={'space-between'} md={9}>
+      <Grid container display="flex" flexWrap="wrap" justifyContent={'space-between'} md={10} xs={12}>
         {[
-          gedcoIcon,
-          bbva,
-          citi,
           proactionSolutionSvg,
           movistar,
           gama,
-          gsaBlue,
-          creditiaSvg,
           estudioWeisfeld,
-          americanExpress,
           aeroCar,
           tracker,
           bnc,
-          bExterior
+          bExterior,
+          citi,
+          lasMercedes,
+          gsaBlue,
+          creditiaSvg,
+          gedcoIcon,
+          bbva,
+          theme.palette.mode === 'dark' ? americanExpressDarkTheme: americanExpress,
+          
         ].map((item, i) => (
-          <Grid item maxWidth={90}  marginRight={4} key={i}
+          <Grid item maxWidth={90}  marginRight={4} margingTop={2} key={i}
             display= 'flex' alignItems= 'center'>
             <Box
               component="img"

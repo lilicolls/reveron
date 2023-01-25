@@ -33,8 +33,8 @@ const Footer = () => {
         color={'textSecondary'}
         align={'center'}
       >
-        Prestamos un  servicio del más alto nivel profesional, con productos y servicios acorde a 
-        las necesidades de nuestros clientes, de manera que se logre un rendimiento óptimo de los recursos y principalmente, el tiempo.
+        Prestamos un servicio del más alto nivel profesional,
+        desarrollamos e implementamos soluciones a la medida acorde a las necesidades de tu negocio, asegurando siempre una cobertura de calidad, que da respuesta de forma oportuna a las necesidades y requerimientos de nuestros clientes alrededor del mundo.
       </Typography>
       <Box marginTop={3} display={'flex'} justifyContent={'center'}>
         <Button
