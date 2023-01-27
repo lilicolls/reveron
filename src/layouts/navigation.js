@@ -107,34 +107,34 @@ export const pages = [
       // },
     ],
   },
-  // {
-  //   title: 'Auth Pages',
-  //   id: 'auth-pages',
-  //   pages: [
-  //     {
-  //       title: 'Login',
-  //       href: '/page-login',
-  //     },
-  //     {
-  //       title: 'Login Simple',
-  //       href: '/page-login-simple',
-  //     },
-  //     {
-  //       title: 'Sign Up',
-  //       href: '/page-signup',
-  //     },
-  //     {
-  //       title: 'Sign Up Simple',
-  //       href: '/page-signup-simple',
-  //     },
-  //     {
-  //       title: 'Forgot Password',
-  //       href: '/page-forgot-password',
-  //     },
-  //     {
-  //       title: 'Forgot Password Simple',
-  //       href: '/page-forgot-password-simple',
-  //     },
-  //   ],
-  // },
+  {
+    title: 'Auth Pages',
+    id: 'auth-pages',
+    pages: [
+      {
+        title: 'Login',
+        href: '/page-login',
+      },
+      {
+        title: 'Login Simple',
+        href: '/page-login-simple',
+      },
+      {
+        title: 'Sign Up',
+        href: '/page-signup',
+      },
+      {
+        title: 'Sign Up Simple',
+        href: '/page-signup-simple',
+      },
+      {
+        title: 'Forgot Password',
+        href: '/page-forgot-password',
+      },
+      {
+        title: 'Forgot Password Simple',
+        href: '/page-forgot-password-simple',
+      },
+    ],
+  },
 ];
