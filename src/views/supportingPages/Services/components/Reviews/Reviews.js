@@ -42,6 +42,7 @@ const Reviews = () => {
           variant={'h3'}
           gutterBottom
           align={'center'}
+          color={theme.palette.primary.contrastText}
         >
           Para atender nuestros pilares de gestión, contamos con los siguientes atributos
         </Box>
@@ -61,11 +62,9 @@ const Reviews = () => {
               <List sx={{ width: '100%', maxWidth: 360 }}>
                 {[
                   {title: 'Comportamiento ético y respetuoso estipulado en nuestros estatutos.'},
-                  {title: 'La promoción de las buenas prácticas de cobranza.'},
-                  {title: 'IVR, Emails, SMS, Chat WhatsApp y Cobranza Telefónica personalizada.'},
                   {title: 'Recuperación de carteras en diferentes mora (Temprana, Vencida, Fallida, etc)'},
                   {title: 'Segmentación de cartera.'},
-
+                  {title: 'Seguimiento personalizado y constante del cliente.'},
                 ].map((item, i) => {
                   const labelId = `checkbox-list-label-${i}`;
 
@@ -113,11 +112,10 @@ const Reviews = () => {
             <Box>
               <List sx={{ width: '100%', maxWidth: 360 }}>
                 {[
-                  {title: 'Seguimiento personalizado y constante del cliente.'},
                   {title: 'Gestión y recuperación de las deudas manteniendo la fidelidad de los clientes.'},
                   {title: 'Diseño de reportes a fin de complementar, cubrir y satisfacer las necesidades de nuestros clientes.'},
                   {title: 'Confidencialidad y seguridad en el manejo de la información de nuestros clientes.'},
-                  {title: 'Capacidad para aprender y capacitarse sobre los aspectos generales de la empresa acreedora, sus productos y servicios para la gestión de cobranzas: sus características, sus políticas, alternativas de solución, etc.'},
+                  {title: 'Capacidad para aprender y capacitarse sobre los aspectos generales de la empresa acreedora y sus productos.'},
                 ].map((item, i) => {
                   const labelId = `checkbox-list-label-${i}`;
 

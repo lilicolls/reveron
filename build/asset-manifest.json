@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.5f04cf32.css",
-    "main.js": "/static/js/main.eb5173b0.js",
+    "main.js": "/static/js/main.7131efe4.js",
     "static/js/27.cf1a19d6.chunk.js": "/static/js/27.cf1a19d6.chunk.js",
     "static/media/video.mp4": "/static/media/video.9bf1c1dd854dcd39776b.mp4",
     "static/media/office.jpg": "/static/media/office.1024d9ab372c519e25aa.jpg",
@@ -10,15 +10,16 @@
     "static/media/graph.jpg": "/static/media/graph.42d2950802425b766f4a.jpg",
     "static/media/img5.jpg": "/static/media/img5.73c0c3ef5dc5d223dc9e.jpg",
     "static/media/team-lead.jpg": "/static/media/team-lead.98c3165af50f303e7468.jpg",
+    "static/media/computer.jpg": "/static/media/computer.9def9261118e4cb56cc6.jpg",
     "static/media/coffe.jpg": "/static/media/coffe.f77212dde057c940264a.jpg",
     "static/media/img-1.jpg": "/static/media/img-1.63f3dda3eab35f8fcd02.jpg",
     "static/media/img1.jpg": "/static/media/img1.0c10754c3252985fabbf.jpg",
     "static/media/img2.jpg": "/static/media/img2.706d87fb3448d56f4b9c.jpg",
     "static/media/img3.jpg": "/static/media/img3.0673571ebd6098254b99.jpg",
     "static/media/callCenter.jpg": "/static/media/callCenter.da130c2ba1164ebf8ea6.jpg",
-    "static/media/computer.jpg": "/static/media/computer.9def9261118e4cb56cc6.jpg",
     "static/media/server.jpg": "/static/media/server.998358aee2d20b89f734.jpg",
     "static/media/business.jpg": "/static/media/business.2aea28cd65b1e4224353.jpg",
+    "static/media/audio.jpg": "/static/media/audio.f6f27a81442ae4d2d6b3.jpg",
     "static/media/building.jpeg": "/static/media/building.60dd356304388a12e1b7.jpeg",
     "static/media/illustration.jpg": "/static/media/illustration.2ea914259f43a7c3fcff.jpg",
     "static/media/building2.jpeg": "/static/media/building2.c7be6c42cf81d83bddd3.jpeg",
@@ -46,6 +47,6 @@
   },
   "entrypoints": [
     "static/css/main.5f04cf32.css",
-    "static/js/main.eb5173b0.js"
+    "static/js/main.7131efe4.js"
   ]
 }

@@ -83,7 +83,7 @@ const WhatWeDo = () => {
           {
             title: 'Cobranzas',
             subtitle:
-            'Desde nuestra casa matriz en Venezuela brindamos un servicio integral de cobranza abarcando el área bancaria y comercial, desarrollando estrategias de cobranza que garanticen la recuperación de carteras morosas, bancarias, servicios, consumos, facuras entre otros.',
+            'Brindamos un servicio integral de cobranza abarcando el área bancaria y comercial, desarrollando estrategias de cobranza que garanticen la recuperación de carteras morosas, bancarias, servicios, consumos, facturas entre otros.',
             icon: (
               <AssuredWorkloadOutlinedIcon/>
             ),
@@ -91,7 +91,7 @@ const WhatWeDo = () => {
           {
             title: 'Telemarketing',
             subtitle:
-              'En Grupo Reveron ofrecemos distintas soluciones de Contact Center para comercios, organizaciones y pymes. Nuestra fuerza de ventas conformada por ejecutivos telefónicos entrenados para ofrecer servicios en los sectores B2B y B2C.',
+              'Ofrecemos distintas soluciones de Contact Center para comercios, organizaciones y pymes. Nuestra fuerza de ventas conformada por ejecutivos telefónicos entrenados para ofrecer servicios en los sectores B2B y B2C.',
             icon: (
               <SupportAgentOutlinedIcon/>
             ),

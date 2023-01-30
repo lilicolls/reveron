@@ -29,7 +29,7 @@ const Hero = () => {
           gutterBottom
           align={'center'}
         >
-          Generamos valor mejorando la experiencia de sus clientes y rentabilizando la operación comercial.
+          Generamos valor mejorando la experiencia de tus clientes.
         </Box>
         <Typography
           variant={'h6'}

@@ -15,6 +15,7 @@ import {
 } from './components';
 // import { Partners } from '../../../../landingPages/Home/components';
 import { Partners } from '../../landingPages/Home/components';
+import audio from './components/img/audio.jpg';
 
 
 const Services = ({ themeMode = 'light' }) => {
@@ -42,8 +43,7 @@ const Services = ({ themeMode = 'light' }) => {
       <Box bgcolor={theme.palette.alternate.main} sx={{ padding: isSm? 6: 0}} position={'relative'} >
         <Container
           sx={{
-            backgroundImage:
-              'url("https://assets.maccarianagency.com/backgrounds/img1.jpg")',
+            backgroundImage: `url("${audio}")`,
             backgroundRepeat: 'no-repeat',
             backgroundPosition: 'center',
             backgroundSize: 'cover',

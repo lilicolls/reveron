@@ -82,7 +82,7 @@ const Main = ({
         {children}
         <Divider />
       </main>
-      <Container paddingY={4}>
+      <Container paddingY={4} sx={{padding: '20px 16px'}}>
         <Footer />
       </Container>
     </div>

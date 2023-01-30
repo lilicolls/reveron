@@ -48,6 +48,7 @@ const validationSchema = yup.object({
 const Form = () => {
   const theme = useTheme();
   const form = useRef();
+  const ref = useRef();
   const isMd = useMediaQuery(theme.breakpoints.up('md'), {
     defaultMatches: true,
   });
@@ -56,6 +57,12 @@ const Form = () => {
   const [open, setOpen] = useState(false);
   const [severityAlert, setSeverityAlert] = useState('success');
   const [alertText,  setAlertText] = useState('');
+  const [file, setFile] = useState();
+
+  const handleUploadFile = () => {
+    console.log('se sube');
+  };
+  
 
   const initialValues = {
     firstName: '',
@@ -65,6 +72,7 @@ const Form = () => {
     company: '',
     message: '',
     groupRadioPicked: '',
+    file: '',
   };
 
   const updateCategory = (e) => {
@@ -77,33 +85,59 @@ const Form = () => {
     setGroupRadioPicked(e.target.value);
   };
 
+  const handleFileChange = (e) => {
+    if (!e.target.files) {
+      return;
+    }
+    console.log('se sube', e.target.files);
+
+    setFile(e.target.files[0]);
+
+    // 🚩 do the file upload here normally...
+  };
+
   const sendEmail = (values) => {
-    console.log('sendMail');
-    console.log('form.current', form.current);
+
     emailjs.send('service_502tik2', 'template_95spgr5', values, 'qsrqd1t7JVtE5bpaY')
       .then((result) => {
-        console.log(result.text);
         setOpen(true);
         setSeverityAlert('success');
         setAlertText('Tu mail fue enviaddo con exito');
         formik.resetForm();
       }, (error) => {
-        console.log(error.text);
         setOpen(true);
         setSeverityAlert('error');
         setAlertText('Hubo un error en el envio del mail');
       });
   };
 
+  const getEmailSubject = (category) => {
+    switch(category) {
+      case 'deal':
+        return 'contacto comercial';
+      case 'work':
+        return 'Trabajar con nosotros';
+      default:
+        return 'sugerencias o reclamos';
+    }
+  };
+
   const onSubmit = (values) => {
+
+    const emailSubject = getEmailSubject(activeCategory);
+
+    const company = values.company === ''? 'no proporcionada': values.company;
+    
+    
     const objectToEmail = { ...values, 
       category: activeCategory,
-      radio: groupRadioPicked
+      radio: groupRadioPicked,
+      emailSubject,
+      company,
+      file
     };
-    
-    // objectToEmail.category = activeCategory;
-    console.log('values form', values);
     console.log('objectToEmail', objectToEmail);
+
     sendEmail(objectToEmail);
     return objectToEmail;
   };
@@ -149,7 +183,12 @@ const Form = () => {
                 </Alert>
               </Collapse>
             </Grid>
-            <Grid item xs={12} sm={12} display='flex' columnSpacing={{ xs: 1, sm: 2, md: 3 }}>
+            <Box>
+              <Typography variant="h6" sx={{ marginBottom: 2 }}>
+                Dinos como podemos ayudarte
+              </Typography>
+            </Box>
+            <Grid container xs={12} sm={12} display='flex' spacing={2} paddingLeft={4}>
               <Grid item >
                 <Chip
                   variant={activeCategory === 'deal'? 'filled' : 'outlined'}
@@ -200,19 +239,19 @@ const Form = () => {
                     name="row-radio-buttons-group"
                   >
                     <FormControlLabel 
-                      value="female" 
+                      value="Cliente" 
                       control={<Radio />} 
                       label="Cliente" 
                       name={'groupRadioPicked'}
                     />
                     <FormControlLabel 
-                      value="male" 
+                      value="Cliente potencial" 
                       control={<Radio />} 
                       label="Cliente potencial" 
                       name={'groupRadioPicked'}  
                     />
                     <FormControlLabel 
-                      value="other"
+                      value="otro"
                       control={<Radio />} 
                       label="Otro" 
                       name={'groupRadioPicked'}
@@ -301,6 +340,23 @@ const Form = () => {
                 helperText={formik.touched.company && formik.errors.company}
               />
             </Grid>}
+
+            {/* {activeCategory === 'work' && <Grid item xs={12} sm={4}>
+              <Typography variant={'subtitle2'} sx={{ marginBottom: 2 }}>
+                Sube tu cv
+              </Typography>
+
+              
+              <Button variant="contained" component="label">
+              Upload
+                <input hidden 
+                  accept="image/*"
+                  multiple type="file" 
+                  onChange={(e)=> handleFileChange(e)}    
+                  name={'file'}   
+                />
+              </Button>
+            </Grid>} */}
           
 
             <Grid item xs={12}>

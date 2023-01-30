@@ -25,7 +25,7 @@ const Process = ({ themeMode = 'light' }) => {
           color={'textSecondary'}
           align={'center'}
         >
-          What we do
+          Que hacemos
         </Typography>
         <Box
           component={Typography}
@@ -42,8 +42,7 @@ const Process = ({ themeMode = 'light' }) => {
           color={'textSecondary'}
           align={'center'}
         >
-          Since 2007, we have helped 25 companies launch over 1k incredible
-          products
+          Desde 1990, hemos ayudado a más de 100 empresas a apalancar su gestión.
         </Typography>
         {/* <Box marginTop={3} display={'flex'} justifyContent={'center'}>
           <Box

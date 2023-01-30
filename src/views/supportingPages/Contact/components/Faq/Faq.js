@@ -16,7 +16,7 @@ const Faq = () => {
           variant={'h3'}
           align={'center'}
         >
-          Frequently Asked Questions
+          Preguntas frecuentes
         </Box>
       </Box>
       <Box>
