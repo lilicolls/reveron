@@ -11,3 +11,6 @@ export { default as Application } from './Application';
 export { default as DomainHosting } from './DomainHosting';
 export { default as Travel } from './Travel';
 export { default as Event } from './Event';
+export { default as AboutUs} from './AboutUs';
+export { default as Services } from './Services';
+export { default as Contact } from './Contact';

@@ -12,9 +12,9 @@ const Highlights = () => {
       <Grid container spacing={2}>
         {[
           {
-            title: 'Built for developers',
+            title: 'La calidad de los equipos',
             subtitle:
-              'Webbee is built to make your life easier. Variables, build tooling, documentation, and reusable components.',
+              'Ofrecemos equipos médicos de alta calidad cumpliendo con los estándares de seguridad y eficacia..',
             icon: (
               <svg
                 height={24}
@@ -34,9 +34,9 @@ const Highlights = () => {
             ),
           },
           {
-            title: 'Designed to be modern',
+            title: 'Experiencia y el conocimiento de nuestro personal',
             subtitle:
-              'Designed with the latest design trends in mind. Webbee feels modern, minimal, and beautiful.',
+              'Contamos con  un equipo de profesionales experimentados y cualificados para  asesorar sobre las mejores opciones.',
             icon: (
               <svg
                 height={24}
@@ -56,9 +56,9 @@ const Highlights = () => {
             ),
           },
           {
-            title: 'Documentation for everything',
+            title: 'Atención al cliente',
             subtitle:
-              'We\'ve written extensive documentation for components and tools, so you never have to reverse engineer anything.',
+              'Servicio de atención al cliente de excelencia, incluyendo soporte técnico, garantía y servicio postventa..',
             icon: (
               <svg
                 height={24}

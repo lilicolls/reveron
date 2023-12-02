@@ -29,7 +29,7 @@ const WhyUs = () => {
         >
           We take you by hand on each
           <br />
-          step of the process
+          step of the process niko
         </Box>
         <Typography
           variant={'h6'}

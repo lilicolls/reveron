@@ -8,6 +8,10 @@ import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import IconButton from '@mui/material/IconButton';
 import CloseIcon from '@mui/icons-material/Close';
+import TwitterIcon from '@mui/icons-material/Twitter';
+import FacebookIcon from '@mui/icons-material/Facebook';
+import InstagramIcon from '@mui/icons-material/Instagram';
+import { colors } from '@mui/material';
 
 const SidebarNav = ({ pages, onClose }) => {
   const theme = useTheme();
@@ -17,7 +21,12 @@ const SidebarNav = ({ pages, onClose }) => {
   }, []);
 
   return (
-    <Box>
+    <Box 
+      display={'flex'}
+      justifyContent={'space-between'}
+      flexDirection={'column'}
+      height={'100%'}
+    >
       <Box
         display={'flex'}
         justifyContent={'flex-end'}
@@ -27,7 +36,9 @@ const SidebarNav = ({ pages, onClose }) => {
           <CloseIcon fontSize="small" />
         </IconButton>
       </Box>
-      <Box paddingX={2} paddingBottom={2}>
+      <Box paddingX={2} paddingBottom={2}
+        flexGrow={1}
+      >
         <Box>
           {pages.map((item, i) => (
             <Box key={i} marginBottom={4}>
@@ -44,7 +55,7 @@ const SidebarNav = ({ pages, onClose }) => {
               </Typography>
               <Grid container spacing={1}>
                 {item.pages.map((p, i) => (
-                  <Grid item xs={6} key={i}>
+                  <Grid item xs={6} md={12} key={i}>
                     <Link
                       variant="body2"
                       component={'a'}
@@ -68,15 +79,37 @@ const SidebarNav = ({ pages, onClose }) => {
             </Box>
           ))}
         </Box>
-        <Box>
-          <Button
-            variant="outlined"
-            fullWidth
-            component="a"
-            href="/docs-introduction"
+      </Box>
+      <Box paddingBottom={2}> 
+        <Box marginTop={4} marginBottom={1}
+          display={'flex'}
+          justifyContent={'center'}
+        >
+          <IconButton
+            size={'small'}
+            sx={{
+              marginRight: 1,
+              color: colors.blueGrey[200],
+            }}
           >
-            Documentation
-          </Button>
+            <FacebookIcon />
+          </IconButton>
+          <IconButton
+            size={'small'}
+            sx={{
+              color: colors.blueGrey[200],
+            }}
+          >
+            <TwitterIcon />
+          </IconButton>
+          <IconButton
+            size={'small'}
+            sx={{
+              color: colors.blueGrey[200],
+            }}
+          >
+            <InstagramIcon />
+          </IconButton>
         </Box>
         <Box marginTop={1}>
           <Button
@@ -87,7 +120,7 @@ const SidebarNav = ({ pages, onClose }) => {
             target="blank"
             href="https://material-ui.com/store/items/webbee-landing-page/"
           >
-            Purchase now
+            Contactanos
           </Button>
         </Box>
       </Box>

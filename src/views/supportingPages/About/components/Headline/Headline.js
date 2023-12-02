@@ -47,7 +47,7 @@ const Headline = () => {
           >
             We take you by hand on each
             <br />
-            step of the process
+            step of the process niko
           </Typography>
         </Box>
         <Box marginBottom={4}>

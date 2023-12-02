@@ -39,8 +39,7 @@ const Footer = () => {
       <Box marginTop={3} display={'flex'} justifyContent={'center'}>
         <Button
           component={'a'}
-          href={'https://material-ui.com/store/items/webbee-landing-page/'}
-          target={'_blank'}
+          href={'/services'}
           variant="contained"
           color="primary"
           size="large"
@@ -62,7 +61,7 @@ const Footer = () => {
             </svg>
           }
         >
-          Purchase now
+          Conoce nuestros servicios
         </Button>
       </Box>
     </Box>

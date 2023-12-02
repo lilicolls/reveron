@@ -23,13 +23,16 @@ import {
   DomainHosting as DomainHostingView,
   Travel as TravelView,
   Event as EventView,
+  AboutUs as AboutUsView,
+  Services as ServicesView,
+  Contact as ContactView,
 } from './views/landingPages';
 
 // Supporting pages
 import {
   About as AboutView,
-  Services as ServicesView,
-  Contact as ContactView,
+  // Services as ServicesView,
+  // Contact as ContactView,
   Pricing as PricingView,
   Customers as CustomersView,
   HireUs as HireUsView,
@@ -76,6 +79,39 @@ const Routes = () => {
           <WithLayout
             {...matchProps}
             component={HomeView}
+            layout={MainLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/about-us"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={AboutUsView}
+            layout={MainLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/services"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={ServicesView}
+            layout={MainLayout}
+          />
+        ))()}
+      />
+      <Route
+        exact
+        path="/contact"
+        element={((matchProps) => (
+          <WithLayout
+            {...matchProps}
+            component={ContactView}
             layout={MainLayout}
           />
         ))()}
@@ -223,18 +259,7 @@ const Routes = () => {
           />
         ))()}
       />
-      <Route
-        exact
-        path="/page-services"
-        element={((matchProps) => (
-          <WithLayout
-            {...matchProps}
-            component={ServicesView}
-            layout={MainLayout}
-          />
-        ))()}
-      />
-      <Route
+      {/* <Route
         exact
         path="/page-contact"
         element={((matchProps) => (
@@ -244,7 +269,7 @@ const Routes = () => {
             layout={MainLayout}
           />
         ))()}
-      />
+      /> */}
       <Route
         exact
         path="/page-pricing"

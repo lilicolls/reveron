@@ -3,7 +3,7 @@ import React from 'react';
 import { useTheme } from '@mui/material/styles';
 import useMediaQuery from '@mui/material/useMediaQuery';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Grid from '@mui/material/Grid';
 import RocketIllustration from 'svg/illustrations/Rocket';
@@ -49,7 +49,7 @@ const Hero = () => {
               saving you precious time.
             </Typography>
           </Box>
-          <Box
+          {/* <Box
             display="flex"
             flexDirection={{ xs: 'column', sm: 'row' }}
             alignItems={{ xs: 'stretched', sm: 'flex-start' }}
@@ -83,7 +83,7 @@ const Hero = () => {
                 View documentation
               </Button>
             </Box>
-          </Box>
+          </Box> */}
         </Box>
       </Grid>
       <Grid item xs={12} md={6}>

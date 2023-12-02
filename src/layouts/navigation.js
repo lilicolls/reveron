@@ -1,5 +1,26 @@
 export const pages = [
   {
+    title: 'Conocenos',
+    id: 'landing-pages',
+    pages: [{
+      title: 'Home',
+      href: '/',
+    },
+    {
+      title: 'Nosotros',
+      href: '/about-us',
+    },
+    {
+      title: 'Servicios',
+      href: '/services',
+    },
+    {
+      title: 'Contacto',
+      href: '/contact',
+    }
+    ]
+  },
+  {
     title: 'Landing Pages',
     id: 'landing-pages',
     pages: [

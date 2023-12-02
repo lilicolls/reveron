@@ -1,7 +1,7 @@
 import React from 'react';
 import Grid from '@mui/material/Grid';
 import Box from '@mui/material/Box';
-import Button from '@mui/material/Button';
+// import Button from '@mui/material/Button';
 import Link from '@mui/material/Link';
 import Typography from '@mui/material/Typography';
 import WebbeeLogo from 'svg/logos/Webbee';
@@ -39,7 +39,7 @@ const Footer = () => (
               Home
             </Link>
           </Box>
-          <Box marginTop={1} marginRight={2}>
+          {/* <Box marginTop={1} marginRight={2}>
             <Link
               underline="none"
               component="a"
@@ -61,7 +61,7 @@ const Footer = () => (
             >
               Purchase now
             </Button>
-          </Box>
+          </Box> */}
         </Box>
       </Box>
     </Grid>
